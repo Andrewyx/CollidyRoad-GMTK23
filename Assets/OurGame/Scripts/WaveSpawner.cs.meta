@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/OurGame/Scripts/WaveSpawner.cs.meta
 guid: 790a7718fd25d4485913dba2b13a2bc2
+========
+guid: 310f40a01a932cb4591723d1a6386082
+>>>>>>>> df0a68649c32341e4f209d37d66c021982ef4a35:Assets/Vehicle.cs.meta
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2

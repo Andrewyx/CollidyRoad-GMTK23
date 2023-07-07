@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/OurGame/Scripts/MoveChicken.cs.meta
+guid: a433be53448774d09b33791025733d7e
+========
+guid: f42d1c39f65db534ca9eb0d4f19984f9
+>>>>>>>> df0a68649c32341e4f209d37d66c021982ef4a35:Assets/EnemyAnimal.cs.meta
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

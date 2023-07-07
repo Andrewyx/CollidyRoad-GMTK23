@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/OurGame/Scripts/MoveChicken.cs.meta
 guid: 92c63ec9b11f749949bff91f844da742
+========
+guid: f42d1c39f65db534ca9eb0d4f19984f9
+>>>>>>>> df0a68649c32341e4f209d37d66c021982ef4a35:Assets/EnemyAnimal.cs.meta
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2

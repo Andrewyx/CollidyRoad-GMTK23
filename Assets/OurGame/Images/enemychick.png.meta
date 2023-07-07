@@ -1,9 +1,17 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/OurGame/Images/enemychick.png.meta
 guid: 05289b5601bac482ca39c131318d6a2e
+========
+guid: 602cb87b6a29443b8636370ea0751574
+>>>>>>>> df0a68649c32341e4f209d37d66c021982ef4a35:Assets/TextMesh Pro/Examples & Extras/Textures/Small Crate_diffuse.jpg.meta
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
+<<<<<<<< HEAD:Assets/OurGame/Images/enemychick.png.meta
   serializedVersion: 12
+========
+  serializedVersion: 7
+>>>>>>>> df0a68649c32341e4f209d37d66c021982ef4a35:Assets/TextMesh Pro/Examples & Extras/Textures/Small Crate_diffuse.jpg.meta
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -30,20 +38,26 @@ TextureImporter:
   generateCubemap: 6
   cubemapConvolution: 0
   seamlessCubemap: 0
-  textureFormat: 1
-  maxTextureSize: 2048
+  textureFormat: -1
+  maxTextureSize: 512
   textureSettings:
     serializedVersion: 2
+<<<<<<<< HEAD:Assets/OurGame/Images/enemychick.png.meta
     filterMode: 1
     aniso: 1
     mipBias: 0
+========
+    filterMode: -1
+    aniso: 16
+    mipBias: -100
+>>>>>>>> df0a68649c32341e4f209d37d66c021982ef4a35:Assets/TextMesh Pro/Examples & Extras/Textures/Small Crate_diffuse.jpg.meta
     wrapU: 1
     wrapV: 1
     wrapW: 1
-  nPOTScale: 0
+  nPOTScale: 1
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 0
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -52,9 +66,9 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 1
+  alphaIsTransparency: 0
   spriteTessellationDetail: -1
-  textureType: 8
+  textureType: 0
   textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
@@ -69,7 +83,11 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
+<<<<<<<< HEAD:Assets/OurGame/Images/enemychick.png.meta
     maxTextureSize: 2048
+========
+    maxTextureSize: 512
+>>>>>>>> df0a68649c32341e4f209d37d66c021982ef4a35:Assets/TextMesh Pro/Examples & Extras/Textures/Small Crate_diffuse.jpg.meta
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -82,7 +100,11 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
+<<<<<<<< HEAD:Assets/OurGame/Images/enemychick.png.meta
     maxTextureSize: 2048
+========
+    maxTextureSize: 512
+>>>>>>>> df0a68649c32341e4f209d37d66c021982ef4a35:Assets/TextMesh Pro/Examples & Extras/Textures/Small Crate_diffuse.jpg.meta
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -92,10 +114,27 @@ TextureImporter:
     overridden: 0
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
+<<<<<<<< HEAD:Assets/OurGame/Images/enemychick.png.meta
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Server
     maxTextureSize: 2048
+========
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Windows Store Apps
+    maxTextureSize: 512
+>>>>>>>> df0a68649c32341e4f209d37d66c021982ef4a35:Assets/TextMesh Pro/Examples & Extras/Textures/Small Crate_diffuse.jpg.meta
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -108,7 +147,11 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: WebGL
+<<<<<<<< HEAD:Assets/OurGame/Images/enemychick.png.meta
     maxTextureSize: 2048
+========
+    maxTextureSize: 512
+>>>>>>>> df0a68649c32341e4f209d37d66c021982ef4a35:Assets/TextMesh Pro/Examples & Extras/Textures/Small Crate_diffuse.jpg.meta
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -125,8 +168,12 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
+<<<<<<<< HEAD:Assets/OurGame/Images/enemychick.png.meta
     spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
+========
+    spriteID: 
+>>>>>>>> df0a68649c32341e4f209d37d66c021982ef4a35:Assets/TextMesh Pro/Examples & Extras/Textures/Small Crate_diffuse.jpg.meta
     vertices: []
     indices: 
     edges: []

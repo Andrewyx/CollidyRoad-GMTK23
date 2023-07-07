@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/OurGame/Prefabs/Chickens.prefab.meta
 guid: 93cb0b32eb02144ba98b304682ef2214
+========
+guid: 6c9c923a8d670cf47ab2184ffdae62fb
+>>>>>>>> df0a68649c32341e4f209d37d66c021982ef4a35:Assets/BetterTestCar.prefab.meta
 PrefabImporter:
   externalObjects: {}
   userData: 

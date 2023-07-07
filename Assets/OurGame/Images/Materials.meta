@@ -1,8 +1,13 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/OurGame/Images/Materials.meta
 guid: 75f802d4ceac74e29a786eceab39942f
+========
+guid: 5808953df7a24274a851aa6dee52d30e
+>>>>>>>> df0a68649c32341e4f209d37d66c021982ef4a35:Assets/TextMesh Pro/Examples & Extras/Materials.meta
 folderAsset: yes
+timeCreated: 1436068007
+licenseType: Pro
 DefaultImporter:
-  externalObjects: {}
   userData: 
   assetBundleName: 
   assetBundleVariant: 

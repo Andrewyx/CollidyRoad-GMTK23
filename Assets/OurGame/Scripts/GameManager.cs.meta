@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/OurGame/Scripts/GameManager.cs.meta
 guid: 46a84d4a7e85f4ef9ba4a4b70c2e121e
+========
+guid: c89a8988987ae3049ba84b4df9739dbb
+>>>>>>>> df0a68649c32341e4f209d37d66c021982ef4a35:Assets/ButtonUI.cs.meta
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
