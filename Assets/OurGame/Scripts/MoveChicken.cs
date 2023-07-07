@@ -18,7 +18,7 @@ public class MoveChicken : MonoBehaviour
             );
         
         Debug.Log(
-            transform.position.y;
+            transform.position.y
             );
         
         
