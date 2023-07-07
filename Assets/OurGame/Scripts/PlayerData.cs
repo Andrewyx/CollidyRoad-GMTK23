@@ -1,7 +1,8 @@
 namespace OurGame.Scripts
 {
-    public class PlayerData
+    public static class PlayerData
     {
-        
+        public static int Points { get; set; }
+        public static int lives = 3;
     }
 }

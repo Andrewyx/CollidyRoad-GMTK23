@@ -1,26 +1,34 @@
+using System;
+using OurGame.Scripts;
 using UnityEngine;
 
 public class MoveChicken : MonoBehaviour
 {
     public float speed;
-    public float pointsOnKill;
+    public int pointsOnKill;
 
     public Transform target;
 
     private void Update()
     {
-        var dir = target.transform.position - transform.position;
-        var distanceThisFrame = speed * Time.deltaTime;
+        transform.position = Vector3.MoveTowards(
+            transform.position,
+            target.position,
+            speed * Time.deltaTime
+            );
         
-        if (dir.magnitude <= distanceThisFrame)
+        Debug.Log(
+            transform.position.y;
+            );
+        
+        
+        if (Math.Abs(transform.position.y - target.position.y) < Mathf.Epsilon)
         {
-            Destroy(gameObject);
+            PlayerData.lives--;
+            Destroy(
+                gameObject
+                );
         }
-        else
-        {
-            transform.Translate(dir.normalized * distanceThisFrame, Space.World);
-        }
-
     }
     
     
@@ -29,6 +37,7 @@ public class MoveChicken : MonoBehaviour
     // put this on your enemy prefabs. You could just copy the on destroy onto a pre-existing script if you want.
     private void OnDestroy()
     {
+        PlayerData.Points += pointsOnKill;
         if (GameObject.FindGameObjectWithTag("WaveSpawner") != null)
             GameObject.FindGameObjectWithTag("WaveSpawner").GetComponent<WaveSpawner>().spawnedEnemies
                 .Remove(gameObject);

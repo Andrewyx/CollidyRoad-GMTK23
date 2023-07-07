@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 using Random = UnityEngine.Random;
 
 public class WaveSpawner : MonoBehaviour
@@ -10,6 +11,7 @@ public class WaveSpawner : MonoBehaviour
     public List<GameObject> enemiesToSpawn = new();
 
     public Transform[] spawnLocation;
+    public float spawnMaxDistanceX;
     public int spawnIndex;
 
     public int waveDuration;
@@ -35,7 +37,14 @@ public class WaveSpawner : MonoBehaviour
             //spawn an enemy
             if (enemiesToSpawn.Count > 0)
             {
-                var enemy = Instantiate(enemiesToSpawn[0], spawnLocation[spawnIndex].position,
+                var enemy = Instantiate(enemiesToSpawn[0], new Vector3(
+                        Random.Range(
+                            spawnLocation[spawnIndex].position.x - spawnMaxDistanceX,
+                            spawnLocation[spawnIndex].position.x + spawnMaxDistanceX
+                            ),
+                        spawnLocation[spawnIndex].position.y,
+                        spawnLocation[spawnIndex].position.z
+                        ),
                     Quaternion.identity); // spawn first enemy in our list
                 enemiesToSpawn.RemoveAt(0); // and remove it
                 spawnedEnemies.Add(enemy);
