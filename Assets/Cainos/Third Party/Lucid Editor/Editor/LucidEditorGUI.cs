@@ -104,45 +104,45 @@ namespace Cainos.LucidEditor
             switch (objType)
             {
                 case Type t when t == typeof(int):
-                    return (object)IntField(position, label, (int)value);
+                    return IntField(position, label, (int)value);
                 case Type t when t == typeof(long):
-                    return (object)LongField(position, label, (long)value);
+                    return LongField(position, label, (long)value);
                 case Type t when t == typeof(float):
-                    return (object)FloatField(position, label, (float)value);
+                    return FloatField(position, label, (float)value);
                 case Type t when t == typeof(double):
-                    return (object)DoubleField(position, label, (double)value);
+                    return DoubleField(position, label, (double)value);
                 case Type t when t == typeof(bool):
-                    return (object)Toggle(position, label, (bool)value);
+                    return Toggle(position, label, (bool)value);
                 case Type t when t == typeof(string):
-                    return (object)TextField(position, label, (string)value);
+                    return TextField(position, label, (string)value);
                 case Type t when t == typeof(Vector2Int):
-                    return (object)Vector2IntField(position, label, (Vector2Int)value);
+                    return Vector2IntField(position, label, (Vector2Int)value);
                 case Type t when t == typeof(Vector2):
-                    return (object)Vector2Field(position, label, (Vector2)value);
+                    return Vector2Field(position, label, (Vector2)value);
                 case Type t when t == typeof(Vector3Int):
-                    return (object)Vector3IntField(position, label, (Vector3Int)value);
+                    return Vector3IntField(position, label, (Vector3Int)value);
                 case Type t when t == typeof(Vector3):
-                    return (object)Vector3Field(position, label, (Vector3)value);
+                    return Vector3Field(position, label, (Vector3)value);
                 case Type t when t == typeof(Vector4):
-                    return (object)Vector4Field(position, label, (Vector4)value);
+                    return Vector4Field(position, label, (Vector4)value);
                 case Type t when t == typeof(RectInt):
-                    return (object)RectIntField(position, label, (RectInt)value);
+                    return RectIntField(position, label, (RectInt)value);
                 case Type t when t == typeof(Rect):
-                    return (object)RectField(position, label, (Rect)value);
+                    return RectField(position, label, (Rect)value);
                 case Type t when t == typeof(BoundsInt):
-                    return (object)BoundsIntField(position, label, (BoundsInt)value);
+                    return BoundsIntField(position, label, (BoundsInt)value);
                 case Type t when t == typeof(Bounds):
-                    return (object)BoundsField(position, label, (Bounds)value);
+                    return BoundsField(position, label, (Bounds)value);
                 case Type t when t == typeof(Color):
-                    return (object)ColorField(position, label, (Color)value);
+                    return ColorField(position, label, (Color)value);
                 case Type t when t == typeof(Gradient):
-                    return (object)GradientField(position, label, (Gradient)value);
+                    return GradientField(position, label, (Gradient)value);
                 case Type t when t == typeof(Enum):
-                    return (object)EnumPopup(position, label, (Enum)value);
+                    return EnumPopup(position, label, (Enum)value);
                 case Type t when t == typeof(AnimationCurve):
-                    return (object)CurveField(position, label, (AnimationCurve)value);
+                    return CurveField(position, label, (AnimationCurve)value);
                 case Type t when t == typeof(UnityEngine.Object):
-                    return (object)ObjectField(position, label, (UnityEngine.Object)value, objType, true);
+                    return ObjectField(position, label, (UnityEngine.Object)value, objType, true);
             }
             throw new ArgumentException($"Unsupported field type: {objType.Name}");
         }

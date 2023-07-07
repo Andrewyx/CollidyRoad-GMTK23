@@ -14,7 +14,7 @@ namespace Cainos.LucidEditor
         public IReadOnlyList<InspectorProperty> childProperties => Array.AsReadOnly(_childProperties);
         private InspectorProperty[] _childProperties;
 
-        private List<PropertyProcessor> processors = new List<PropertyProcessor>();
+        private List<PropertyProcessor> processors = new();
 
         public bool hasChildren
         {

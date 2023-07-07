@@ -6,8 +6,8 @@ namespace Cainos.LucidEditor
 {
     public static class LucidEditorUtility
     {
-        private static Stack<int> indentStack = new Stack<int>();
-        private static Stack<Color> guiColorStack = new Stack<Color>();
+        private static Stack<int> indentStack = new();
+        private static Stack<Color> guiColorStack = new();
 
         internal static int horizontalGroupCount;
 

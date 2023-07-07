@@ -9,14 +9,14 @@ namespace Cainos.LucidEditor
 {
     internal static class ReflectionUtil
     {
-        private static Dictionary<(Type, string, BindingFlags, bool), FieldInfo> cacheFieldInfo = new Dictionary<(Type, string, BindingFlags, bool), FieldInfo>();
-        private static Dictionary<(Type, string, BindingFlags, bool), PropertyInfo> cachePropertyInfo = new Dictionary<(Type, string, BindingFlags, bool), PropertyInfo>();
-        private static Dictionary<(Type, BindingFlags, bool), MemberInfo[]> cacheAllMembers = new Dictionary<(Type, BindingFlags, bool), MemberInfo[]>();
+        private static Dictionary<(Type, string, BindingFlags, bool), FieldInfo> cacheFieldInfo = new();
+        private static Dictionary<(Type, string, BindingFlags, bool), PropertyInfo> cachePropertyInfo = new();
+        private static Dictionary<(Type, BindingFlags, bool), MemberInfo[]> cacheAllMembers = new();
         // private static Dictionary<(object, BindingFlags), MethodInfo[]> cacheAllMethods = new Dictionary<(object, BindingFlags), MethodInfo[]>();
 
-        private static Dictionary<(object, string), Func<object>> cacheGetFieldValue = new Dictionary<(object, string), Func<object>>();
-        private static Dictionary<(object, string), Func<object>> cacheGetPropertyValue = new Dictionary<(object, string), Func<object>>();
-        private static Dictionary<(object, string), Func<object>> cacheGetMethodValue = new Dictionary<(object, string), Func<object>>();
+        private static Dictionary<(object, string), Func<object>> cacheGetFieldValue = new();
+        private static Dictionary<(object, string), Func<object>> cacheGetPropertyValue = new();
+        private static Dictionary<(object, string), Func<object>> cacheGetMethodValue = new();
 
         public static object GetFieldValue(object target, Type type, string name, BindingFlags bindingAttr = BindingFlags.NonPublic | BindingFlags.Public | BindingFlags.Instance | BindingFlags.Static)
         {

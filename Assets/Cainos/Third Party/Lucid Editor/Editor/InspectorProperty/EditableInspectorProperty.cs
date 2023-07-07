@@ -13,7 +13,7 @@ namespace Cainos.LucidEditor
         private MethodInfo setter;
         private PropertyInfo info;
 
-        private List<PropertyProcessor> processors = new List<PropertyProcessor>();
+        private List<PropertyProcessor> processors = new();
         internal EditableInspectorProperty(SerializedObject serializedObject, object parentObject, string name, Attribute[] attributes) : base(serializedObject, null, parentObject, name, attributes) { }
 
         internal override void Initialize()

@@ -17,7 +17,7 @@ namespace Cainos.LucidEditor
         private readonly string label;
 
         private Action action;
-        private List<PropertyProcessor> processors = new List<PropertyProcessor>();
+        private List<PropertyProcessor> processors = new();
 
         internal InspectorButton(SerializedObject serializedObject, object parentObject, MethodInfo methodInfo, InspectorButtonSize size) : base(serializedObject, null, parentObject, methodInfo.Name, methodInfo.GetCustomAttributes().ToArray())
         {

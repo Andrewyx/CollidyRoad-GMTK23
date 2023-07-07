@@ -21,7 +21,7 @@ namespace Cainos.LucidEditor
 
         public bool isExpanded = true;
 
-        private List<InspectorProperty> _childProperties = new List<InspectorProperty>();
+        private List<InspectorProperty> _childProperties = new();
         public IReadOnlyList<InspectorProperty> childProperties => _childProperties.AsReadOnly();
 
         internal void Add(InspectorProperty item)

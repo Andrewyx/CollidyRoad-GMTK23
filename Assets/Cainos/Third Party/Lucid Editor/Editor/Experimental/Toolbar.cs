@@ -5,7 +5,7 @@ namespace Cainos.LucidEditor.Experimental
 {
     public sealed class Toolbar
     {
-        private List<GUIContent> _items = new List<GUIContent>();
+        private List<GUIContent> _items = new();
         public IReadOnlyList<GUIContent> items => _items;
 
         public int selected;

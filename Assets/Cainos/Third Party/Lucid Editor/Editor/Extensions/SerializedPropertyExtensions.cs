@@ -41,13 +41,13 @@ namespace Cainos.LucidEditor
                 FieldInfo fieldInfo = ReflectionUtil.GetField(targetObjectType, pathSegment, (BindingFlags)(-1), inherit);
                 if (fieldInfo != null)
                 {
-                    return (TAttribute)fieldInfo.GetCustomAttribute<TAttribute>(inherit);
+                    return fieldInfo.GetCustomAttribute<TAttribute>(inherit);
                 }
 
                 PropertyInfo propertyInfo = targetObjectType.GetProperty(pathSegment, (BindingFlags)(-1));
                 if (propertyInfo != null)
                 {
-                    return (TAttribute)propertyInfo.GetCustomAttribute<TAttribute>(inherit);
+                    return propertyInfo.GetCustomAttribute<TAttribute>(inherit);
                 }
             }
 

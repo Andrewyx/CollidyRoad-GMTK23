@@ -9,12 +9,12 @@ namespace Cainos.LucidEditor.Experimental
 {
     public class TreeMenu
     {
-        private List<TreeMenuItem> baseElements = new List<TreeMenuItem>();
+        private List<TreeMenuItem> baseElements = new();
         private SimpleTreeView simpleTreeView;
         private TreeViewState state;
 
         private int currentId = 0;
-        private List<TreeMenuItem> _selectedItems = new List<TreeMenuItem>();
+        private List<TreeMenuItem> _selectedItems = new();
 
         public IReadOnlyList<TreeMenuItem> selectedItems => Array.AsReadOnly(_selectedItems.ToArray());
         public event Action<IReadOnlyList<TreeMenuItem>> onSelectionChanged;
@@ -184,7 +184,7 @@ namespace Cainos.LucidEditor.Experimental
         private string _name;
 
         public TreeMenuItem parent { get; private set; }
-        private List<TreeMenuItem> _childElements = new List<TreeMenuItem>();
+        private List<TreeMenuItem> _childElements = new();
         public IReadOnlyList<TreeMenuItem> childElements => _childElements;
 
         public void Add(TreeMenuItem child)
