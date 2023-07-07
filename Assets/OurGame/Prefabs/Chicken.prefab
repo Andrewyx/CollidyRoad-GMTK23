@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9168862707839396851}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ChickenTarget
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45,7 +45,7 @@ GameObject:
   - component: {fileID: -5653185199647800065}
   - component: {fileID: 3608426655750035630}
   - component: {fileID: 7393162807712715065}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Chicken
   m_TagString: Animal
   m_Icon: {fileID: 0}

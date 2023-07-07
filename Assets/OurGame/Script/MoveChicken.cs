@@ -38,8 +38,6 @@ public class MoveChicken : MonoBehaviour
     private void OnDestroy()
     {
         PlayerData.Points += pointsOnKill;
-        if (GameObject.FindGameObjectWithTag("WaveSpawner") != null)
-            GameObject.FindGameObjectWithTag("WaveSpawner").GetComponent<WaveSpawner>().spawnedEnemies
-                .Remove(gameObject);
+
     }
 }

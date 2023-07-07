@@ -9,8 +9,7 @@ public class EnemyAnimal : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        GameObject animal = GameObject.FindGameObjectWithTag("Animal");     
-        Physics2D.IgnoreCollision(animal.GetComponent<Collider2D>(), GetComponent<Collider2D>());        
+        Physics2D.IgnoreLayerCollision(8, 8);   
         CurrentEnemyHP = MaxEnemyHP;
     }
     public void TakeDamage(int damageAmount){
