@@ -12,6 +12,7 @@ public class CinemachineShake : MonoBehaviour
     private float shakerTimerTotal;
     private bool shakeSharp = true;
 
+
     private void Awake()
     {
         Instance = this;

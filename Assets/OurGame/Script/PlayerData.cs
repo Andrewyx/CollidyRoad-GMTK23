@@ -11,6 +11,11 @@ public class PlayerData : MonoBehaviour
     public int currentPoints = 0;
     public int lives = 3;
 
+    public float timePerPassiveIncome = 3f;
+    private float InitialtimePerPassiveIncome = 3f;
+
+    public int PassiveIncomeVal= 5;
+
     private int maxLives;
 
     private void Awake() {
@@ -22,6 +27,7 @@ public class PlayerData : MonoBehaviour
        pointText.text = "Nugget Coins: " + currentPoints.ToString(); 
        livesText.text = "Lives: " + lives.ToString(); 
        maxLives = lives;
+       InitialtimePerPassiveIncome = timePerPassiveIncome;
     }
 
     public void IncreasePoints(int val){
@@ -35,5 +41,12 @@ public class PlayerData : MonoBehaviour
     public void Reset(){
         lives = maxLives;
         currentPoints = 0;
+    }
+    private void Update() {
+        timePerPassiveIncome -= Time.deltaTime;
+        if (timePerPassiveIncome <= 0){
+            IncreasePoints(PassiveIncomeVal);
+            timePerPassiveIncome = InitialtimePerPassiveIncome;
+        }
     }
 }
