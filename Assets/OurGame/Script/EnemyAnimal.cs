@@ -8,6 +8,7 @@ public class EnemyAnimal : MonoBehaviour
     private int CurrentEnemyHP;
 
     public GameObject Blood;
+    [SerializeField] private AudioSource deathSoundEffect; 
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +22,8 @@ public class EnemyAnimal : MonoBehaviour
             PlayerData.instance.IncreasePoints(MaxEnemyHP);
             Destroy(gameObject);
             Instantiate(Blood, transform.position, Quaternion.identity);
+            deathSoundEffect.Play(); 
+
         }
     }
 }

@@ -9,12 +9,11 @@ public class MoveChicken : MonoBehaviour
 
     public Transform target;
 
-   [SerializeField] private AudioSource deathSoundEffect; 
-   // [SerializeField] private AudioSource walkingSoundEffect; 
+ 
 
     private void Update()
     {
-       // walkingSoundEffect.Play(); 
+       
         transform.position = Vector3.MoveTowards(
             transform.position,
             target.position,
@@ -28,12 +27,11 @@ public class MoveChicken : MonoBehaviour
         
         if (transform.position.y >= 4)
         {
-
+            
             PlayerData.instance.DecreaseLives(1);
             Destroy(
                 gameObject
                 );
-            deathSoundEffect.Play(); 
         }
     }
 }
