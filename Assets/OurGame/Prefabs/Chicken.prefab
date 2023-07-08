@@ -153,7 +153,6 @@ MonoBehaviour:
   MaxEnemyHP: 1
   Blood: {fileID: 8761058250669690772, guid: c5432a79e191c47758cf9a8ea433f225, type: 3}
   deathSoundClone: {fileID: 8165764704013130534, guid: 0033672d5ab0f524e974e8a5535bdd67, type: 3}
-  deathSoundEffect: {fileID: 2580164675527907802}
 --- !u!50 &3608426655750035630
 Rigidbody2D:
   serializedVersion: 4
@@ -5057,9 +5056,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: ce167daa48dcd4f188fbda43253848e3, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 9eafc03b6ce704038a3f48d49288d8c5, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.258
   m_Pitch: 1
   Loop: 0
   Mute: 0
