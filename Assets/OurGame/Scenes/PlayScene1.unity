@@ -3693,7 +3693,10 @@ MonoBehaviour:
   quitButton: {fileID: 888219545}
   pointsToNextLevel: 50
   nextLevel:
-    m_Handle: 0
+    _sceneOB: {fileID: 102900000, guid: 225f8740610354b6b8cd55e67f7f43a8, type: 3}
+    _name: PlayScene2
+    _path: 
+    _buildIndex: -1
 --- !u!1 &1947159694
 GameObject:
   m_ObjectHideFlags: 0

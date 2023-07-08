@@ -74,6 +74,7 @@ public class GameManager : MonoBehaviour
                 HandleGameOver();
                 break;
             case GameState.Win:
+                Debug.Log($"Loading next scene named: {nextLevel.Name}");
                 SceneManager.LoadScene(nextLevel.Name);
                 break;
             default:

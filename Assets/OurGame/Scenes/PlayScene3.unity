@@ -3691,7 +3691,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   resumeButton: {fileID: 2134691723}
   quitButton: {fileID: 888219545}
-  uiElements: []
+  pointsToNextLevel: 50
+  nextLevel:
+    _sceneOB: {fileID: 102900000, guid: f7c61ec1bfc534fbe9b8ec58a7982250, type: 3}
+    _name: WinScene
+    _path: 
+    _buildIndex: -1
 --- !u!1 &1947159694
 GameObject:
   m_ObjectHideFlags: 0
