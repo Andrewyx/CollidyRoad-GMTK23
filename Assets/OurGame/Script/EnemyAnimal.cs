@@ -8,26 +8,21 @@ public class EnemyAnimal : MonoBehaviour
     private int CurrentEnemyHP;
 
     public GameObject Blood;
-    [SerializeField] private AudioSource deathSoundEffect;
-    [SerializeField] private AudioClip deathSound;
+    public GameObject deathSoundClone;
+
     // Start is called before the first frame update
     void Start()
     {
         Physics2D.IgnoreLayerCollision(8, 8);   
         CurrentEnemyHP = MaxEnemyHP;
+        
     }
     public void TakeDamage(int damageAmount){
         CurrentEnemyHP -= damageAmount;
+        
         if(CurrentEnemyHP <= 0)
         {
-            Debug.Log(deathSoundEffect);
-            if (!deathSoundEffect.isPlaying)
-            {
-                deathSoundEffect.Play();
-                deathSoundEffect.PlayOneShot(deathSound, 1);
-            }
-
-            Debug.Log(deathSoundEffect.isPlaying);
+            Instantiate(deathSoundClone, transform.position, Quaternion.identity);
             PlayerData.instance.IncreasePoints(MaxEnemyHP);
             Destroy(gameObject);
             Instantiate(Blood, transform.position, Quaternion.identity);
