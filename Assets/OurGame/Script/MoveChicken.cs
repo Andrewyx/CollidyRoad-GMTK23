@@ -20,14 +20,12 @@ public class MoveChicken : MonoBehaviour
         Debug.Log(
             transform.position.y
             );
-        
-        
-        if (Math.Abs(transform.position.y - target.position.y) < Mathf.Epsilon)
+
+
+        if (transform.position.y >= 4)
         {
             PlayerData.lives--;
-            Destroy(
-                gameObject
-                );
+            Destroy(gameObject);
         }
     }
     
