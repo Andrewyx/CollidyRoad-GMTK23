@@ -3691,9 +3691,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   resumeButton: {fileID: 2134691723}
   quitButton: {fileID: 888219545}
-  pointsToNextLevel: 50
-  nextLevel:
-    m_Handle: 0
+  uiElements: []
 --- !u!1 &1947159694
 GameObject:
   m_ObjectHideFlags: 0
