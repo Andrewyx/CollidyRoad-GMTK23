@@ -48,7 +48,7 @@ GameObject:
   - component: {fileID: -5834464039961287346}
   - component: {fileID: -2844199126953856286}
   - component: {fileID: 2580164675527907802}
-  - component: {fileID: 180870172043388675}
+  - component: {fileID: 1675519549847256187}
   m_Layer: 8
   m_Name: Chicken
   m_TagString: Animal
@@ -5143,7 +5143,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!95 &180870172043388675
+--- !u!95 &1675519549847256187
 Animator:
   serializedVersion: 5
   m_ObjectHideFlags: 0
@@ -5153,7 +5153,7 @@ Animator:
   m_GameObject: {fileID: 3671549474643671430}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 676893883d46b4932a9dc60a500e134a, type: 2}
+  m_Controller: {fileID: 9100000, guid: 3cd9c36584191df4ab150071abf3fb8c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
