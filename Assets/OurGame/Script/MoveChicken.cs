@@ -14,15 +14,30 @@ public class MoveChicken : MonoBehaviour
     private void Update()
     {
        
-        transform.position = Vector3.MoveTowards(
-            transform.position,
-            target.position,
-            speed * Time.deltaTime
+        // transform.position = Vector3.MoveTowards(
+            // transform.position,
+            // target.position,
+            // speed * Time.deltaTime
+            // );
+     
+        // make the chicken only go up
+        transform.Translate(
+            Vector3.up * speed * Time.deltaTime
+            );
+        
+        // constrain chicken rotation to only upwards
+        
+        transform.rotation = Quaternion.Euler(
+            0,
+            0,
+            0
             );
         
         // Debug.Log(
         //     transform.position.y
         //     );
+        
+        
         
         
         if (transform.position.y >= 4)
