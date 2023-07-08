@@ -1304,6 +1304,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1923105499}
   - component: {fileID: 1923105500}
+  - component: {fileID: 1923105501}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -1342,6 +1343,18 @@ MonoBehaviour:
   livesText: {fileID: 900697698}
   currentPoints: 0
   lives: 3
+--- !u!114 &1923105501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1923105498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d47c6ef0ca33473c9e341880e41e539, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1996268953
 GameObject:
   m_ObjectHideFlags: 0
