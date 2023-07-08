@@ -1,124 +1,61 @@
-using System;
+/*
+* Script meant to spawn enemies in random waves, given count, and different gameObjects to spawn
+*/
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Serialization;
-using Random = UnityEngine.Random;
 
-public class WaveSpawner : MonoBehaviour
+class WaveSpawner : MonoBehaviour
 {
-    public List<Enemy> enemies = new();
-    public int currWave;
-    public List<GameObject> enemiesToSpawn = new();
-
-    public Transform[] spawnLocation;
-    public float spawnMaxDistanceX;
-    public int spawnIndex;
-
-    public int waveDuration;
-
-    public List<GameObject> spawnedEnemies = new();
-    private float spawnInterval;
-    private float spawnTimer;
-    private float waveTimer;
-
-    private int waveValue;
+    // prefabs of enemies to spawn
+    public List<GameObject> enemies;
+    // total # of enemies to spawn
+    public int totalEnemies;
+    // seconds between each spawn
+    public float spawnInterval;
+    // location to spawn enemies
+    public Transform spawnLocation;
+    // we want to draw a rectangular spawn area, so we need a y and x size
+    public float spawnAreaX;
+    public float spawnAreaY;
 
     // Start is called before the first frame update
-    private void Start()
+    void Start()
     {
-        GenerateWave();
+        StartCoroutine(SpawnEnemies());
     }
-
-    // Update is called once per frame
-    private void FixedUpdate()
+    
+    IEnumerator SpawnEnemies()
     {
-        if (spawnTimer <= 0)
+        // spawn enemies until we reach totalEnemies
+        while (totalEnemies > 0)
         {
-            //spawn an enemy
-            if (enemiesToSpawn.Count > 0)
-            {
-                var enemy = Instantiate(enemiesToSpawn[0], new Vector3(
-                        Random.Range(
-                            spawnLocation[spawnIndex].position.x - spawnMaxDistanceX,
-                            spawnLocation[spawnIndex].position.x + spawnMaxDistanceX
-                            ),
-                        spawnLocation[spawnIndex].position.y,
-                        spawnLocation[spawnIndex].position.z
-                        ),
-                    Quaternion.identity); // spawn first enemy in our list
-                enemiesToSpawn.RemoveAt(0); // and remove it
-                spawnedEnemies.Add(enemy);
-                spawnTimer = spawnInterval;
-
-                if (spawnIndex + 1 <= spawnLocation.Length - 1)
-                    spawnIndex++;
-                else
-                    spawnIndex = 0;
-            }
-            else
-            {
-                waveTimer = 0; // if no enemies remain, end wave
-            }
-        }
-        else
-        {
-            spawnTimer -= Time.fixedDeltaTime;
-            waveTimer -= Time.fixedDeltaTime;
-        }
-
-        if (waveTimer <= 0 && spawnedEnemies.Count <= 0)
-        {
-            currWave++;
-            GenerateWave();
+            var position = spawnLocation.position;
+            var spawnPos = new Vector3(
+                Random.Range(
+                    position.x - spawnAreaX,
+                    position.x + spawnAreaX
+                    ),
+                Random.Range(
+                    position.y - spawnAreaY,
+                    position.y + spawnAreaY
+                    ),
+                position.y
+                );
+                
+            // pick a random enemy to spawn
+            int enemyIndex = Random.Range(0, enemies.Count);
+            // spawn the enemy
+            Instantiate(
+                enemies[enemyIndex],
+                spawnPos,
+                Quaternion.identity
+                );
+            // wait for spawnInterval seconds
+            yield return new WaitForSeconds(spawnInterval);
+            // decrease totalEnemies
+            totalEnemies--;
         }
     }
-
-    public void GenerateWave()
-    {
-        waveValue = currWave * 10;
-        GenerateEnemies();
-
-        spawnInterval = waveDuration / enemiesToSpawn.Count; // gives a fixed time between each enemies
-        waveTimer = waveDuration; // wave duration is read only
-    }
-
-    public void GenerateEnemies()
-    {
-        // Create a temporary list of enemies to generate
-        // 
-        // in a loop grab a random enemy 
-        // see if we can afford it
-        // if we can, add it to our list, and deduct the cost.
-
-        // repeat... 
-
-        //  -> if we have no points left, leave the loop
-
-        var generatedEnemies = new List<GameObject>();
-        while (waveValue > 0 || generatedEnemies.Count < 50)
-        {
-            var randEnemyId = Random.Range(0, enemies.Count);
-            var randEnemyCost = enemies[randEnemyId].cost;
-
-            if (waveValue - randEnemyCost >= 0)
-            {
-                generatedEnemies.Add(enemies[randEnemyId].enemyPrefab);
-                waveValue -= randEnemyCost;
-            }
-            else if (waveValue <= 0)
-            {
-                break;
-            }
-        }
-
-        enemiesToSpawn.Clear();
-        enemiesToSpawn = generatedEnemies;
-    }
-}
-
-[Serializable]
-public class Enemy
-{
-    public GameObject enemyPrefab;
-    public int cost;
 }
