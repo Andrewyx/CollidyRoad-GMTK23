@@ -1,7 +1,6 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using OurGame.Scripts;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -40,12 +39,12 @@ public class GameManager : MonoBehaviour
 
     public void Update()
     {
-        if (PlayerData.lives <= 0)
+        if (PlayerData.instance.lives <= 0)
         {
             UpdateGameState(GameState.GameOver);
         }
 
-        if (PlayerData.Points >= 5 /* TODO: Change Later*/)
+        if (PlayerData.instance.currentPoints >= 5 /* TODO: Change Later*/)
         {
             UpdateGameState(GameState.Win);
         }
@@ -54,7 +53,7 @@ public class GameManager : MonoBehaviour
     public void HandleGameOver()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        PlayerData.Reset();
+        PlayerData.instance.Reset();
     }
 }
 

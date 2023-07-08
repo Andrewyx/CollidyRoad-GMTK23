@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using OurGame.Scripts;
 using UnityEngine;
 
 public class EnemyAnimal : MonoBehaviour
