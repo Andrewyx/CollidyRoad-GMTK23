@@ -1,6 +1,8 @@
 using System;
 using UnityEngine.SceneManagement;
 using UnityEngine;
+using UnityEngine.Serialization;
+using UnityEngine.UI;
 
 public enum GameState
 {
@@ -13,15 +15,30 @@ public enum GameState
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
+    
+    // single responsibility principle be damned
+    public Button resumeButton;
+    public Button quitButton;
+
+    public GameObject[] uiElements;
+
 
     public void UpdateGameState(GameState gs)
     {
         switch (gs)
         {
             case GameState.Playing:
+                foreach (var uiElement in uiElements)
+                {
+                    uiElement.SetActive(false);
+                }
                 Resume();
                 break;
             case GameState.Paused:
+                foreach (var uiElement in uiElements)
+                {
+                    uiElement.SetActive(true);
+                }
                 Pause();
                 break;
             case GameState.GameOver:
@@ -36,6 +53,19 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
+        uiElements = GameObject.FindGameObjectsWithTag("PauseMenu");
+        resumeButton.onClick.AddListener(
+            () =>
+            {
+                UpdateGameState(GameState.Playing);
+            }
+            );
+        quitButton.onClick.AddListener(
+            () =>
+            {
+                Application.Quit();
+            }
+            );
         UpdateGameState(GameState.Playing);
     }
 
