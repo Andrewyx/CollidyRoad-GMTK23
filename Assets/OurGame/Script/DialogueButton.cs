@@ -9,24 +9,21 @@ public class DialogueButton : MonoBehaviour
     private void Start()
     {
         _index = 0;
+        Next();
     }
 
     // Update is called once per frame
     private void Update()
     {
-        if (_index >= 4)
-            _index = 4;
-
-        if (_index < 0)
+        if (_index >= 10)
             _index = 0;
-
+    
         if (_index == 0) background[0].gameObject.SetActive(true);
     }
 
     public void Next()
     {
-        _index += 1;
-
+        
         for (var i = 0; i < background.Length; i++)
         {
             background[i].gameObject.SetActive(false);
@@ -34,5 +31,6 @@ public class DialogueButton : MonoBehaviour
         }
 
         Debug.Log(_index);
+        _index += 1;
     }
 }
