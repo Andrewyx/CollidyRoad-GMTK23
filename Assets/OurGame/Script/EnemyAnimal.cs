@@ -17,13 +17,8 @@ public class EnemyAnimal : MonoBehaviour
         CurrentEnemyHP -= damageAmount;
         if(CurrentEnemyHP <= 0)
         {
-            PlayerData.Points++;
+            PlayerData.instance.IncreasePoints(MaxEnemyHP);
             Destroy(gameObject);
         }
-    }
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
