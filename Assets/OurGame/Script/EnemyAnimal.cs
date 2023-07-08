@@ -6,6 +6,8 @@ public class EnemyAnimal : MonoBehaviour
 {
     [SerializeField] private int MaxEnemyHP = 1;
     private int CurrentEnemyHP;
+
+    public GameObject Blood;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,6 +20,7 @@ public class EnemyAnimal : MonoBehaviour
         {
             PlayerData.instance.IncreasePoints(MaxEnemyHP);
             Destroy(gameObject);
+            Instantiate(Blood, transform.position, Quaternion.identity);
         }
     }
 }
