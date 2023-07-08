@@ -22,7 +22,7 @@ public class MoveChicken : MonoBehaviour
             );
         
         
-        if (Mathf.Abs(transform.position.y - target.position.y) < Mathf.Epsilon)
+        if (transform.position.y >= 4)
         {
             PlayerData.instance.DecreaseLives(1);
             Destroy(
