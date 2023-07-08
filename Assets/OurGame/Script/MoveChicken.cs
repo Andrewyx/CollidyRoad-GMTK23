@@ -20,9 +20,9 @@ public class MoveChicken : MonoBehaviour
             speed * Time.deltaTime
             );
         
-        Debug.Log(
-            transform.position.y
-            );
+        // Debug.Log(
+        //     transform.position.y
+        //     );
         
         
         if (transform.position.y >= 4)
