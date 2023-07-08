@@ -7,6 +7,7 @@ public class BloodDestroyer : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        Destroy(gameObject, 3f);
+        // blood disappears after 1s
+        Destroy(gameObject, 1f);
     }
 }

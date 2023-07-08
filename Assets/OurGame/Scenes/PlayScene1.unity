@@ -3676,7 +3676,7 @@ MonoBehaviour:
   currentPoints: 0
   lives: 3
   timePerPassiveIncome: 1
-  PassiveIncomeVal: 5
+  passiveIncomeVal: 5
 --- !u!114 &1923105501
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3783,11 +3783,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c89a8988987ae3049ba84b4df9739dbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Vehicle:
+  vehicle:
   - {fileID: 2101473909007155763, guid: 6c9c923a8d670cf47ab2184ffdae62fb, type: 3}
   - {fileID: 2101473909007155763, guid: 36523cec4f5de8b48a7cb6f92b42f4fd, type: 3}
-  VehicleSpawnLocation: {fileID: 1996268954}
-  CarCost: 5
+  vehicleSpawnLocation: {fileID: 1996268954}
+  button: {fileID: 445081663}
+  carCost: 5
 --- !u!4 &2079605092
 Transform:
   m_ObjectHideFlags: 0
