@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5196984796758231582}
   - component: {fileID: 2540528621663004445}
   m_Layer: 0
-  m_Name: BetterTestCar
+  m_Name: 'GreyTestCar '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -77,6 +77,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   VehicleForce: 50
   VehicleHealth: 3
+  prefabList: []
 --- !u!212 &5196984796758231582
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -116,9 +117,9 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 80119781
-  m_SortingLayer: 1
+  m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 069877f9832fecd448e49f0438625442, type: 3}
+  m_Sprite: {fileID: 21300000, guid: cfd7dc334a29c0f4aa6c77a5c3146f1d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

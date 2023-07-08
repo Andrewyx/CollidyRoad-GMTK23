@@ -4,14 +4,16 @@ using UnityEngine;
 
 public class ButtonUI : MonoBehaviour
 {
-    public GameObject Vehicle;
+    public List<GameObject> Vehicle;
     public Transform VehicleSpawnLocation;
     // Start is called before the first frame update
     public int CarCost = 5;
+    private int randomIndex;
 
     public void SpawnCar() {
         if(PlayerData.instance.currentPoints >= CarCost){
-            Instantiate(Vehicle, VehicleSpawnLocation.position, Quaternion.identity);
+            randomIndex = Random.Range(0, Vehicle.Count);
+            Instantiate(Vehicle[randomIndex], VehicleSpawnLocation.position, Quaternion.identity);
             PlayerData.instance.currentPoints -= CarCost;
         }
         else{

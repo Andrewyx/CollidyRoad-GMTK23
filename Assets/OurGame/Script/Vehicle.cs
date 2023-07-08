@@ -8,6 +8,7 @@ public class Vehicle : MonoBehaviour
     public float VehicleForce = 50f;
     public int VehicleHealth = 3;
     private float wreckageDuration = 2f;
+    [SerializeField] private List<GameObject> prefabList;
     
     // Start is called before the first frame update
     void Start()
