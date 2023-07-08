@@ -98,11 +98,26 @@ public class WaveSpawner : MonoBehaviour
         while (waveValue > 0 || generatedEnemies.Count < 50)
         {
             var randEnemyId = Random.Range(0, enemies.Count);
-            var randEnemyCost = enemies[randEnemyId].cost;
+            var randEnemyCost = 0;
+            try
+            {
+                randEnemyCost = enemies[randEnemyId].cost;
+            }
+            catch (Exception)
+            {
+                ; // noop
+            }
 
             if (waveValue - randEnemyCost >= 0)
             {
-                generatedEnemies.Add(enemies[randEnemyId].enemyPrefab);
+                try
+                {
+                    generatedEnemies.Add(enemies[randEnemyId].enemyPrefab);
+                }
+                catch (Exception)
+                {
+                    ; // another noop
+                }
                 waveValue -= randEnemyCost;
             }
             else if (waveValue <= 0)
