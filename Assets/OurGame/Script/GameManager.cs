@@ -5,6 +5,7 @@ using UnityEngine;
 public enum GameState
 {
     Playing,
+    Paused,
     GameOver,
     Win
 }
@@ -13,15 +14,15 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
 
-    void Start()
-    {
-    }
-
     public void UpdateGameState(GameState gs)
     {
         switch (gs)
         {
             case GameState.Playing:
+                Resume();
+                break;
+            case GameState.Paused:
+                Pause();
                 break;
             case GameState.GameOver:
                 HandleGameOver();
@@ -31,6 +32,11 @@ public class GameManager : MonoBehaviour
             default:
                 throw new ArgumentOutOfRangeException(nameof(gs), gs, null);
         }
+    }
+
+    private void Awake()
+    {
+        UpdateGameState(GameState.Playing);
     }
 
     public void Update()
@@ -44,11 +50,26 @@ public class GameManager : MonoBehaviour
         {
             UpdateGameState(GameState.Win);
         }
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            UpdateGameState(GameState.Paused);
+        }
     }
 
-    public void HandleGameOver()
+    private void HandleGameOver()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         PlayerData.instance.Reset();
+    }
+    
+    private void Resume()
+    {
+        Time.timeScale = 1;
+    }
+    
+    private void Pause()
+    {
+        Time.timeScale = 0;
     }
 }
