@@ -1,5 +1,5 @@
-using System;
-using OurGame.Scripts;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class MoveChicken : MonoBehaviour
@@ -22,22 +22,12 @@ public class MoveChicken : MonoBehaviour
             );
         
         
-        if (Math.Abs(transform.position.y - target.position.y) < Mathf.Epsilon)
+        if (Mathf.Abs(transform.position.y - target.position.y) < Mathf.Epsilon)
         {
-            PlayerData.lives--;
+            PlayerData.instance.DecreaseLives(1);
             Destroy(
                 gameObject
                 );
         }
-    }
-    
-    
-
-
-    // put this on your enemy prefabs. You could just copy the on destroy onto a pre-existing script if you want.
-    private void OnDestroy()
-    {
-        PlayerData.Points += pointsOnKill;
-
     }
 }
