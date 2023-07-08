@@ -1,26 +1,28 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class ButtonUI : MonoBehaviour
 {
-    public List<GameObject> Vehicle;
-    public Transform VehicleSpawnLocation;
-    // Start is called before the first frame update
-    public int CarCost = 5;
-    private int randomIndex;
+    public List<GameObject> vehicle;
 
-    public void SpawnCar() {
-        if(PlayerData.instance.currentPoints >= CarCost){
-            randomIndex = Random.Range(0, Vehicle.Count);
-            Instantiate(Vehicle[randomIndex], VehicleSpawnLocation.position, Quaternion.identity);
-            PlayerData.instance.currentPoints -= CarCost;
+    public Transform vehicleSpawnLocation;
+
+    // Start is called before the first frame update
+    public int carCost = 5;
+    private int _randomIndex;
+
+    public void SpawnCar()
+    {
+        if (PlayerData.instance.currentPoints >= carCost)
+        {
+            _randomIndex = Random.Range(0, vehicle.Count);
+            Instantiate(vehicle[_randomIndex], vehicleSpawnLocation.position, Quaternion.identity);
+            PlayerData.instance.currentPoints -= carCost;
         }
-        else{
+        else
+        {
             Debug.Log("too bad, you're poor");
         }
-    }
-    private void Update() {
-        //Add a thing to change the colour of the button if you dont have enought currency to buy it
     }
 }

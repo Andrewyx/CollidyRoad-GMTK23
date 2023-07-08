@@ -1,25 +1,22 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class DeleteSound : MonoBehaviour
 {
-    AudioSource audioData;
-
     [SerializeField] private float lifetime = 3.0f;
+
+    private AudioSource _audioData;
+
     // Start is called before the first frame update
-    void Awake()
+    private void Awake()
     {
-        audioData = GetComponent<AudioSource>();
-        audioData.Play();
+        _audioData = GetComponent<AudioSource>();
+        _audioData.Play();
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    private void FixedUpdate()
     {
         lifetime -= Time.deltaTime;
-        if(lifetime <= 0){
-            Destroy(gameObject);
-        }
+        if (lifetime <= 0) Destroy(gameObject);
     }
 }

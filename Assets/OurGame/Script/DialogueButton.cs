@@ -1,45 +1,38 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class DialogueButton : MonoBehaviour
 {
+    public GameObject[] background;
+    private int _index;
 
-    public GameObject[] background; 
-    int index; 
 
-    
-    void Start()
+    private void Start()
     {
-        index = 0; 
+        _index = 0;
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        if(index >= 4)
-           index = 4 ; 
+        if (_index >= 4)
+            _index = 4;
 
-        if(index < 0)
-           index = 0 ; 
+        if (_index < 0)
+            _index = 0;
 
-        if(index ==0)
-        {
-            background[0].gameObject.SetActive(true); 
-        }
+        if (_index == 0) background[0].gameObject.SetActive(true);
     }
 
     public void Next()
     {
-        index += 1; 
+        _index += 1;
 
-        for(int i = 0 ; i < background.Length; i++)
+        for (var i = 0; i < background.Length; i++)
         {
-            background[i].gameObject.SetActive(false); 
-            background[index].gameObject.SetActive(true); 
+            background[i].gameObject.SetActive(false);
+            background[_index].gameObject.SetActive(true);
         }
-            Debug.Log(index); 
-    }
 
+        Debug.Log(_index);
+    }
 }

@@ -1,52 +1,61 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 using TMPro;
+using UnityEngine;
+using UnityEngine.Serialization;
 
 public class PlayerData : MonoBehaviour
 {
     public static PlayerData instance;
     public TMP_Text pointText;
     public TMP_Text livesText;
-    public int currentPoints = 0;
+    public int currentPoints;
     public int lives = 3;
 
     public float timePerPassiveIncome = 3f;
-    private float InitialtimePerPassiveIncome = 3f;
 
-    public int PassiveIncomeVal= 5;
+    public int passiveIncomeVal = 5;
+    private float _initialtimePerPassiveIncome = 3f;
 
-    private int maxLives;
+    private int _maxLives;
 
-    private void Awake() {
+    private void Awake()
+    {
         instance = this;
     }
-    // Start is called before the first frame update
-    void Start()
-    {
-       pointText.text = "Nugget Coins: " + currentPoints.ToString(); 
-       livesText.text = "Lives: " + lives.ToString(); 
-       maxLives = lives;
-       InitialtimePerPassiveIncome = timePerPassiveIncome;
-    }
 
-    public void IncreasePoints(int val){
-        currentPoints += val;
-        pointText.text = "Nugget Coins: " + currentPoints.ToString(); 
-    }
-    public void DecreaseLives(int val){
-        lives -= val;
-        livesText.text = "Lives: " + lives.ToString(); 
-    }
-    public void Reset(){
-        lives = maxLives;
+    public void Reset()
+    {
+        lives = _maxLives;
         currentPoints = 0;
     }
-    private void Update() {
+
+    // Start is called before the first frame update
+    private void Start()
+    {
+        pointText.text = "Nugget Coins: " + currentPoints;
+        livesText.text = "Lives: " + lives;
+        _maxLives = lives;
+        _initialtimePerPassiveIncome = timePerPassiveIncome;
+    }
+
+    private void Update()
+    {
         timePerPassiveIncome -= Time.deltaTime;
-        if (timePerPassiveIncome <= 0){
-            IncreasePoints(PassiveIncomeVal);
-            timePerPassiveIncome = InitialtimePerPassiveIncome;
+        if (timePerPassiveIncome <= 0)
+        {
+            IncreasePoints(passiveIncomeVal);
+            timePerPassiveIncome = _initialtimePerPassiveIncome;
         }
+    }
+
+    public void IncreasePoints(int val)
+    {
+        currentPoints += val;
+        pointText.text = "Nugget Coins: " + currentPoints;
+    }
+
+    public void DecreaseLives(int val)
+    {
+        lives -= val;
+        livesText.text = "Lives: " + lives;
     }
 }

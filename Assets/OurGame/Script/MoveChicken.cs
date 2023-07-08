@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class MoveChicken : MonoBehaviour
@@ -9,44 +7,39 @@ public class MoveChicken : MonoBehaviour
 
     public Transform target;
 
- 
 
     private void Update()
     {
-       
         // transform.position = Vector3.MoveTowards(
-            // transform.position,
-            // target.position,
-            // speed * Time.deltaTime
-            // );
-     
+        // transform.position,
+        // target.position,
+        // speed * Time.deltaTime
+        // );
+
         // make the chicken only go up
         transform.Translate(
             Vector3.up * speed * Time.deltaTime
-            );
-        
+        );
+
         // constrain chicken rotation to only upwards
-        
+
         transform.rotation = Quaternion.Euler(
             0,
             0,
             0
-            );
-        
+        );
+
         // Debug.Log(
         //     transform.position.y
         //     );
-        
-        
-        
-        
+
+
         if (transform.position.y >= 4)
         {
-            
             PlayerData.instance.DecreaseLives(1);
             Destroy(
                 gameObject
-                );
+            );
         }
     }
 }

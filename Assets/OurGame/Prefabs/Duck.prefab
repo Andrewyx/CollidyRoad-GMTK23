@@ -148,8 +148,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f42d1c39f65db534ca9eb0d4f19984f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxEnemyHP: 1
-  Blood: {fileID: 8761058250669690772, guid: c5432a79e191c47758cf9a8ea433f225, type: 3}
+  maxEnemyHp: 1
+  blood: {fileID: 8761058250669690772, guid: c5432a79e191c47758cf9a8ea433f225, type: 3}
   deathSoundClone: {fileID: 8165764704013130534, guid: 0033672d5ab0f524e974e8a5535bdd67, type: 3}
 --- !u!50 &3608426655750035630
 Rigidbody2D:
