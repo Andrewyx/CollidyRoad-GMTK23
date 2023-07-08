@@ -21,6 +21,7 @@ public class GameManager : MonoBehaviour
     public Button quitButton;
 
     public GameObject[] uiElements;
+    private bool gameState = true;
 
 
     public void UpdateGameState(GameState gs)
@@ -83,7 +84,13 @@ public class GameManager : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            UpdateGameState(GameState.Paused);
+            gameState = !gameState;
+            if(gameState){
+                UpdateGameState(GameState.Playing);
+            }
+            else{
+                UpdateGameState(GameState.Paused);
+            }
         }
     }
 
