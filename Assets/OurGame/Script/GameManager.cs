@@ -1,7 +1,9 @@
 using System;
+using Udar.SceneManager;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using Object = System.Object;
 
 public enum GameState
 {
@@ -18,13 +20,18 @@ public class GameManager : MonoBehaviour
     // single responsibility principle be damned
     public Button resumeButton;
     public Button quitButton;
+    
+    public int pointsToNextLevel = 50; // should never be more than number of enemies spawned in the game,
+                                       // or else the game will never end
+                                       
+    [SerializeField] private SceneField nextLevel;
 
-    public GameObject[] uiElements;
+    private GameObject[] _uiElements;
     private bool _gameState = true;
 
     private void Awake()
     {
-        uiElements = GameObject.FindGameObjectsWithTag("PauseMenu");
+        _uiElements = GameObject.FindGameObjectsWithTag("PauseMenu");
         resumeButton.onClick.AddListener(
             () => { UpdateGameState(GameState.Playing); }
         );
@@ -38,7 +45,7 @@ public class GameManager : MonoBehaviour
     {
         if (PlayerData.instance.lives <= 0) UpdateGameState(GameState.GameOver);
 
-        if (PlayerData.instance.currentPoints >= 5 /* TODO: Change Later*/) UpdateGameState(GameState.Win);
+        if (PlayerData.instance.currentPoints >= pointsToNextLevel /* TODO: Change Later*/) UpdateGameState(GameState.Win);
 
         if (Input.GetKeyDown(KeyCode.Escape))
         {
@@ -56,17 +63,19 @@ public class GameManager : MonoBehaviour
         switch (gs)
         {
             case GameState.Playing:
-                foreach (var uiElement in uiElements) uiElement.SetActive(false);
+                foreach (var uiElement in _uiElements) uiElement.SetActive(false);
                 Resume();
                 break;
             case GameState.Paused:
-                foreach (var uiElement in uiElements) uiElement.SetActive(true);
+                foreach (var uiElement in _uiElements) uiElement.SetActive(true);
                 Pause();
                 break;
             case GameState.GameOver:
                 HandleGameOver();
                 break;
             case GameState.Win:
+                Debug.Log($"Loading next scene named: {nextLevel.Name}");
+                SceneManager.LoadScene(nextLevel.Name);
                 break;
             default:
                 throw new ArgumentOutOfRangeException(nameof(gs), gs, null);
