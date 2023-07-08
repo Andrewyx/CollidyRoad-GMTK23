@@ -138,7 +138,6 @@ MonoBehaviour:
   pointsOnKill: 0
   target: {fileID: 9168862707839396851}
   deathSoundEffect: {fileID: 3864600948329641054}
-  walkingSoundEffect: {fileID: 2757085652679980078}
 --- !u!114 &-5653185199647800065
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -262,7 +261,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: ce167daa48dcd4f188fbda43253848e3, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.135
+  m_Volume: 0.181
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -357,10 +356,10 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 718e8c6baf9a04baf8d6bca4745cb94f, type: 3}
-  m_PlayOnAwake: 0
-  m_Volume: 0.187
+  m_PlayOnAwake: 1
+  m_Volume: 0.104
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
