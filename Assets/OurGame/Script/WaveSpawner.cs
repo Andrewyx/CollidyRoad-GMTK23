@@ -62,4 +62,5 @@ internal class WaveSpawner : MonoBehaviour
             totalEnemies--;
         }
     }
+    
 }
