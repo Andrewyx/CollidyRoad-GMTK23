@@ -3448,7 +3448,7 @@ MonoBehaviour:
   resumeButton: {fileID: 1325203432}
   quitButton: {fileID: 1423144900}
   numKilled: 0
-  killToNextLevel: 100
+  killToNextLevel: 300
   pointsToNextLevel: 200
   nextLevel:
     _sceneOB: {fileID: 102900000, guid: 225f8740610354b6b8cd55e67f7f43a8, type: 3}

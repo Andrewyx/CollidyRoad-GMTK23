@@ -21,10 +21,10 @@ public class GameManager : MonoBehaviour
     public Button resumeButton;
     public Button quitButton;
 
-    public int numKilled = 0;
-    
+    public int numKilled;
+
     public int killToNextLevel;
-    
+
     public int pointsToNextLevel = 50; // should never be more than number of enemies spawned in the game,
                                        // or else the game will never end
                                        
