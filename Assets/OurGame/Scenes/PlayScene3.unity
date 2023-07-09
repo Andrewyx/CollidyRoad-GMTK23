@@ -5258,12 +5258,12 @@ MonoBehaviour:
   numKilled: 0
   killToNextLevel: 200
   lastPlayedLevel: 0
-  pointsToNextLevel: 500
+  pointsToNextLevel: 600
   nextLevel:
     _sceneOB: {fileID: 102900000, guid: f7c61ec1bfc534fbe9b8ec58a7982250, type: 3}
     _name: WinScene
     _path: Assets/OurGame/Scenes/WinScene.unity
-    _buildIndex: 5
+    _buildIndex: 8
 --- !u!1 &1928843020
 GameObject:
   m_ObjectHideFlags: 0
