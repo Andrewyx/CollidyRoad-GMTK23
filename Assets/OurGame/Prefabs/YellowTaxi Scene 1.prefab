@@ -75,7 +75,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 310f40a01a932cb4591723d1a6386082, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vehicleForce: 2
+  vehicleForce: 7
   vehicleHealth: 1
   brokenBus: {fileID: 3181363670931498174, guid: bc364969bf76a4f40854e926afc0fc17, type: 3}
 --- !u!212 &5196984796758231582

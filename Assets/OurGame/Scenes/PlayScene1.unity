@@ -2125,6 +2125,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7282150997466556592, guid: fe33c7ef9d039cf48b81dc056aecc783, type: 3}
+      propertyPath: zrotation
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 7282150997466556592, guid: fe33c7ef9d039cf48b81dc056aecc783, type: 3}
       propertyPath: vehicle.Array.size
       value: 4
       objectReference: {fileID: 0}
