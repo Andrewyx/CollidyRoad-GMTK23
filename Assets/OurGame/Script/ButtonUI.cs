@@ -13,6 +13,7 @@ public class ButtonUI : MonoBehaviour
     public Transform vehicleSpawnLocation;
     
     public GameObject button;
+    public float zrotation = 0;
 
     // Start is called before the first frame update
     public int carCost = 5;
@@ -23,7 +24,7 @@ public class ButtonUI : MonoBehaviour
         if (PlayerData.instance.currentPoints >= carCost)
         {
             _randomIndex = Random.Range(0, vehicle.Count);
-            Instantiate(vehicle[_randomIndex], vehicleSpawnLocation.position, Quaternion.identity);
+            Instantiate(vehicle[_randomIndex], vehicleSpawnLocation.position, Quaternion.Euler(0, 0, zrotation));
             PlayerData.instance.currentPoints -= carCost;
         }
         else

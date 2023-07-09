@@ -6,7 +6,6 @@ public class Vehicle : MonoBehaviour
 {
     public float vehicleForce = 50f;
     public int vehicleHealth = 3;
-    [SerializeField] private List<GameObject> prefabList;
     private Rigidbody2D _rb;
     private float _wreckageDuration = 2f;
 
