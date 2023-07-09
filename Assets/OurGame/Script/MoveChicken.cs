@@ -35,21 +35,21 @@ public class MoveChicken : MonoBehaviour
         //     );
 
 
-        if (transform.position.y >= 4 && SceneManager.GetActiveScene().name == "PlayScene1")
+        if (transform.position.y >= 10 && SceneManager.GetActiveScene().name == "PlayScene1")
         {
             PlayerData.instance.DecreaseLives(1);
             Destroy(
                 gameObject
             );
         }
-        else if (transform.position.y >= 9 && SceneManager.GetActiveScene().name == "PlayScene2")
+        else if (transform.position.y >= 10 && SceneManager.GetActiveScene().name == "PlayScene2")
         {
             PlayerData.instance.DecreaseLives(1);
             Destroy(
                 gameObject
             );
         }      
-        else if (transform.position.y >= 9 && SceneManager.GetActiveScene().name == "PlayScene3")
+        else if (transform.position.y >= 10 && SceneManager.GetActiveScene().name == "PlayScene3")
         {
             PlayerData.instance.DecreaseLives(1);
             Destroy(

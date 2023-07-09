@@ -1922,9 +1922,33 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7282150997466556592, guid: fe33c7ef9d039cf48b81dc056aecc783, type: 3}
+      propertyPath: zrotation
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 7282150997466556592, guid: fe33c7ef9d039cf48b81dc056aecc783, type: 3}
+      propertyPath: vehicle.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7282150997466556592, guid: fe33c7ef9d039cf48b81dc056aecc783, type: 3}
       propertyPath: vehicleSpawnLocation
       value: 
       objectReference: {fileID: 515639145}
+    - target: {fileID: 7282150997466556592, guid: fe33c7ef9d039cf48b81dc056aecc783, type: 3}
+      propertyPath: vehicle.Array.data[0]
+      value: 
+      objectReference: {fileID: 2101473909007155763, guid: 87f37d014ff347348863f0d1c045ccc4, type: 3}
+    - target: {fileID: 7282150997466556592, guid: fe33c7ef9d039cf48b81dc056aecc783, type: 3}
+      propertyPath: vehicle.Array.data[1]
+      value: 
+      objectReference: {fileID: 2101473909007155763, guid: 24070826844adba4a85b154f6293aea8, type: 3}
+    - target: {fileID: 7282150997466556592, guid: fe33c7ef9d039cf48b81dc056aecc783, type: 3}
+      propertyPath: vehicle.Array.data[2]
+      value: 
+      objectReference: {fileID: 2101473909007155763, guid: c9c2ae7121824474cadb35ff702bca06, type: 3}
+    - target: {fileID: 7282150997466556592, guid: fe33c7ef9d039cf48b81dc056aecc783, type: 3}
+      propertyPath: vehicle.Array.data[3]
+      value: 
+      objectReference: {fileID: 2101473909007155763, guid: c9c2ae7121824474cadb35ff702bca06, type: 3}
     - target: {fileID: 8555331694872329265, guid: fe33c7ef9d039cf48b81dc056aecc783, type: 3}
       propertyPath: m_Name
       value: RunOverButton
@@ -2095,17 +2119,29 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7282150997466556592, guid: fe33c7ef9d039cf48b81dc056aecc783, type: 3}
+      propertyPath: vehicle.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7282150997466556592, guid: fe33c7ef9d039cf48b81dc056aecc783, type: 3}
       propertyPath: vehicleSpawnLocation
       value: 
       objectReference: {fileID: 567544301}
     - target: {fileID: 7282150997466556592, guid: fe33c7ef9d039cf48b81dc056aecc783, type: 3}
       propertyPath: vehicle.Array.data[0]
       value: 
-      objectReference: {fileID: 2101473909007155763, guid: 31524686995bc4c6f86e6aab026abcff, type: 3}
+      objectReference: {fileID: 2101473909007155763, guid: 36523cec4f5de8b48a7cb6f92b42f4fd, type: 3}
     - target: {fileID: 7282150997466556592, guid: fe33c7ef9d039cf48b81dc056aecc783, type: 3}
       propertyPath: vehicle.Array.data[1]
       value: 
-      objectReference: {fileID: 2101473909007155763, guid: deefc69118f3d44e88c7014d21be92d2, type: 3}
+      objectReference: {fileID: 2101473909007155763, guid: 6c9c923a8d670cf47ab2184ffdae62fb, type: 3}
+    - target: {fileID: 7282150997466556592, guid: fe33c7ef9d039cf48b81dc056aecc783, type: 3}
+      propertyPath: vehicle.Array.data[2]
+      value: 
+      objectReference: {fileID: 2101473909007155763, guid: 1ff29d2364a37493290f3166c738ff7d, type: 3}
+    - target: {fileID: 7282150997466556592, guid: fe33c7ef9d039cf48b81dc056aecc783, type: 3}
+      propertyPath: vehicle.Array.data[3]
+      value: 
+      objectReference: {fileID: 2101473909007155763, guid: 0f33796e34a004478bbb528253770fa3, type: 3}
     - target: {fileID: 8555331694872329265, guid: fe33c7ef9d039cf48b81dc056aecc783, type: 3}
       propertyPath: m_Name
       value: RunOverButton (1)
@@ -2687,7 +2723,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: eef77ed7ca8514e9d8359f4578465b28, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 718e8c6baf9a04baf8d6bca4745cb94f, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.23
   m_Pitch: 1
