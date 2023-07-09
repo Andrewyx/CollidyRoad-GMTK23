@@ -6,6 +6,7 @@ public class Vehicle : MonoBehaviour
 {
     public float vehicleForce = 50f;
     public int vehicleHealth = 3;
+    public GameObject brokenBus;
     private Rigidbody2D _rb;
     private float _wreckageDuration = 2f;
 
@@ -32,7 +33,16 @@ public class Vehicle : MonoBehaviour
     {
         vehicleHealth -= val;
         if (vehicleHealth <= 0)
+        {
             //change sprite here and use wreckageDuration for the wait before destroying gameobj
+            var myGo = Instantiate(
+                brokenBus,
+                transform.position,
+                Quaternion.identity
+            );
+            
+            Debug.Log(myGo.name);
             Destroy(gameObject);
+        }
     }
 }
