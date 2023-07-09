@@ -3376,8 +3376,8 @@ MonoBehaviour:
   vehicle:
   - {fileID: 2101473909007155763, guid: 05c7b2644d2ae69449d969db6145e333, type: 3}
   - {fileID: 2101473909007155763, guid: 558aac8cb6b462a469f75eb20cc0af10, type: 3}
-  - {fileID: 2101473909007155763, guid: 1e2bf6c708a352a43bbd954a7f9343c5, type: 3}
-  - {fileID: 2101473909007155763, guid: dc5547a23f3757441a3f7668f9b02c02, type: 3}
+  - {fileID: 2101473909007155763, guid: 281e09d079caa4c368e6796693391bdd, type: 3}
+  - {fileID: 2101473909007155763, guid: 76df90763bb164201a57b14e0abaf3c7, type: 3}
   vehicleSpawnLocation: {fileID: 799736140}
   button: {fileID: 1965458598}
   zrotation: 90
