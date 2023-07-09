@@ -177,7 +177,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &40646379
 RectTransform:
   m_ObjectHideFlags: 0
@@ -524,7 +524,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &208178785
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1004,7 +1004,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &339457208
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1080,7 +1080,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &378733349
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1163,8 +1163,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 393125574}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -241, y: -342, z: -41.073544}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -260.4, y: -398, z: -41.073544}
+  m_LocalScale: {x: 0.76136, y: 0.76136, z: 0.76136}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1183324967}
@@ -1972,7 +1972,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &659320205
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2090,7 +2090,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &798419876
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2747,7 +2747,7 @@ GameObject:
   - component: {fileID: 917631399}
   - component: {fileID: 917631398}
   m_Layer: 5
-  m_Name: 9
+  m_Name: 8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3107,7 +3107,7 @@ GameObject:
   - component: {fileID: 1137785060}
   - component: {fileID: 1137785059}
   m_Layer: 5
-  m_Name: 10
+  m_Name: 9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3225,6 +3225,8 @@ MonoBehaviour:
   - {fileID: 1699402203}
   - {fileID: 917631396}
   - {fileID: 1137785057}
+  startSlide: 7
+  endSlide: 9
 --- !u!1 &1183324966
 GameObject:
   m_ObjectHideFlags: 0
@@ -5255,12 +5257,13 @@ MonoBehaviour:
   quitButton: {fileID: 888219545}
   numKilled: 0
   killToNextLevel: 200
+  lastPlayedLevel: 0
   pointsToNextLevel: 500
   nextLevel:
     _sceneOB: {fileID: 102900000, guid: f7c61ec1bfc534fbe9b8ec58a7982250, type: 3}
     _name: WinScene
     _path: Assets/OurGame/Scenes/WinScene.unity
-    _buildIndex: 4
+    _buildIndex: 5
 --- !u!1 &1928843020
 GameObject:
   m_ObjectHideFlags: 0

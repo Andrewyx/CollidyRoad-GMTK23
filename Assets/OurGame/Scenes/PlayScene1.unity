@@ -1146,12 +1146,12 @@ GameObject:
   - component: {fileID: 653973114}
   - component: {fileID: 653973113}
   m_Layer: 5
-  m_Name: 9
+  m_Name: 8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &653973113
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1319,7 +1319,7 @@ Transform:
   m_GameObject: {fileID: 707646496}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -210.9, y: -548.9, z: -41.073544}
-  m_LocalScale: {x: 2.0872, y: 2.0872, z: 2.0872}
+  m_LocalScale: {x: 1.5706389, y: 1.5706389, z: 1.5706389}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 783160063}
@@ -1381,6 +1381,8 @@ MonoBehaviour:
   - {fileID: 1650419573}
   - {fileID: 653973112}
   - {fileID: 804542439}
+  startSlide: 0
+  endSlide: 3
 --- !u!1 &739488180
 GameObject:
   m_ObjectHideFlags: 0
@@ -1398,7 +1400,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &739488181
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1581,12 +1583,12 @@ GameObject:
   - component: {fileID: 804542441}
   - component: {fileID: 804542440}
   m_Layer: 5
-  m_Name: 10
+  m_Name: 9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &804542440
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2366,7 +2368,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1366084603
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2564,7 +2566,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1546319200
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2826,7 +2828,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1650419574
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3449,12 +3451,13 @@ MonoBehaviour:
   quitButton: {fileID: 1423144900}
   numKilled: 0
   killToNextLevel: 300
+  lastPlayedLevel: 0
   pointsToNextLevel: 200
   nextLevel:
     _sceneOB: {fileID: 102900000, guid: 225f8740610354b6b8cd55e67f7f43a8, type: 3}
     _name: PlayScene2
     _path: Assets/OurGame/Scenes/PlayScene2.unity
-    _buildIndex: 2
+    _buildIndex: 3
 --- !u!1 &1947159694
 GameObject:
   m_ObjectHideFlags: 0

@@ -8,12 +8,14 @@ public class DialogueButton : MonoBehaviour
     // timer for each dialogue background elem
     // once timer is up, move to next dialogue background elem
     int secondsBetweenDialogue = 10;
-    float timer = 0f;
+    float timer;
 
+    public int startSlide;
+    public int endSlide;
 
     private void Start()
     {
-        _index = 0;
+        _index = startSlide;
         Next();
     }
 
@@ -21,7 +23,7 @@ public class DialogueButton : MonoBehaviour
     private void Update()
     {
     
-        if (_index == 0) background[0].gameObject.SetActive(true);
+        if (_index == startSlide) background[startSlide].gameObject.SetActive(true);
         timer += Time.deltaTime;
         
         if (timer > secondsBetweenDialogue)
@@ -35,7 +37,7 @@ public class DialogueButton : MonoBehaviour
     {
         timer = 0f;
 
-        for (var i = 0; i < background.Length; i++)
+        for (var i = startSlide; i < endSlide; i++)
         {
             background[i].gameObject.SetActive(false);
             background[_index].gameObject.SetActive(true);

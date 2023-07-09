@@ -862,7 +862,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &429122912
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1201,6 +1201,8 @@ MonoBehaviour:
   - {fileID: 1214603552}
   - {fileID: 1062213721}
   - {fileID: 1935027732}
+  startSlide: 3
+  endSlide: 6
 --- !u!1 &688460437
 GameObject:
   m_ObjectHideFlags: 0
@@ -1551,7 +1553,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &756373048
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2246,7 +2248,7 @@ Transform:
   m_GameObject: {fileID: 937353276}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -210.9, y: -548.9, z: -41.073544}
-  m_LocalScale: {x: 2.0872, y: 2.0872, z: 2.0872}
+  m_LocalScale: {x: 1.6259705, y: 1.6259705, z: 1.6259705}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 813542635}
@@ -2394,12 +2396,12 @@ GameObject:
   - component: {fileID: 1062213723}
   - component: {fileID: 1062213722}
   m_Layer: 5
-  m_Name: 9
+  m_Name: 8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1062213722
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2839,7 +2841,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1214603553
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2915,7 +2917,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1241914102
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4258,12 +4260,13 @@ MonoBehaviour:
   quitButton: {fileID: 377628583}
   numKilled: 0
   killToNextLevel: 2000
+  lastPlayedLevel: 0
   pointsToNextLevel: 2000
   nextLevel:
     _sceneOB: {fileID: 102900000, guid: f4a53ab200da242528b607ca5d7a2178, type: 3}
     _name: PlayScene3
     _path: Assets/OurGame/Scenes/PlayScene3.unity
-    _buildIndex: 3
+    _buildIndex: 4
 --- !u!1 &1935027732
 GameObject:
   m_ObjectHideFlags: 0
@@ -4276,12 +4279,12 @@ GameObject:
   - component: {fileID: 1935027734}
   - component: {fileID: 1935027733}
   m_Layer: 5
-  m_Name: 10
+  m_Name: 9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1935027733
 MonoBehaviour:
   m_ObjectHideFlags: 0

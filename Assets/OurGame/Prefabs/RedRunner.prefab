@@ -54,7 +54,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 500
+  m_Mass: 50
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0
@@ -82,8 +82,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vehicleForce: 1
-  vehicleHealth: 3
-  brokenBus: {fileID: 0}
+  vehicleHealth: 8
+  brokenBus: {fileID: 8761058250669690772, guid: c5432a79e191c47758cf9a8ea433f225, type: 3}
 --- !u!61 &1646897408571156222
 BoxCollider2D:
   m_ObjectHideFlags: 0
