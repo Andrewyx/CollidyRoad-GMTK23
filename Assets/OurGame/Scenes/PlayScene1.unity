@@ -648,8 +648,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 567544301}
   - {fileID: 515639145}
+  - {fileID: 567544301}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2039,6 +2039,14 @@ PrefabInstance:
       propertyPath: vehicleSpawnLocation
       value: 
       objectReference: {fileID: 567544301}
+    - target: {fileID: 7282150997466556592, guid: fe33c7ef9d039cf48b81dc056aecc783, type: 3}
+      propertyPath: vehicle.Array.data[0]
+      value: 
+      objectReference: {fileID: 2101473909007155763, guid: 31524686995bc4c6f86e6aab026abcff, type: 3}
+    - target: {fileID: 7282150997466556592, guid: fe33c7ef9d039cf48b81dc056aecc783, type: 3}
+      propertyPath: vehicle.Array.data[1]
+      value: 
+      objectReference: {fileID: 2101473909007155763, guid: deefc69118f3d44e88c7014d21be92d2, type: 3}
     - target: {fileID: 8555331694872329265, guid: fe33c7ef9d039cf48b81dc056aecc783, type: 3}
       propertyPath: m_Name
       value: RunOverButton (1)
@@ -3194,8 +3202,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pointText: {fileID: 2080260264}
   livesText: {fileID: 406424645}
-  currentPoints: 0
-  lives: 3
+  currentPoints: 20
+  lives: 5
   timePerPassiveIncome: 1
   passiveIncomeVal: 5
 --- !u!114 &1923105501
@@ -3212,7 +3220,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   resumeButton: {fileID: 1325203432}
   quitButton: {fileID: 1423144900}
-  pointsToNextLevel: 5000000
+  pointsToNextLevel: 120
   nextLevel:
     _sceneOB: {fileID: 102900000, guid: 225f8740610354b6b8cd55e67f7f43a8, type: 3}
     _name: PlayScene2
