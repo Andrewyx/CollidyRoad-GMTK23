@@ -166,7 +166,7 @@ GameObject:
   - component: {fileID: 488604824}
   - component: {fileID: 488604825}
   m_Layer: 0
-  m_Name: WinCard
+  m_Name: LossCard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -181,7 +181,7 @@ Transform:
   m_GameObject: {fileID: 488604822}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 1.612903, z: -1.67}
-  m_LocalScale: {x: 0.54, y: 0.54, z: 0.54}
+  m_LocalScale: {x: 0.48, y: 0.48, z: 0.48}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1178642015}
@@ -228,7 +228,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 650b05dbc44532a468508fb52d0d246a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8a02586f7c44e7f4f8a17d203cf183a7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -249,7 +249,7 @@ Animator:
   m_GameObject: {fileID: 488604822}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: eeefa5beec390f649a7e6ffaf2c367d2, type: 2}
+  m_Controller: {fileID: 9100000, guid: 825eeb331dcfa4b418b5764d28a6facf, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
