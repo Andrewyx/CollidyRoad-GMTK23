@@ -802,7 +802,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: RUN OVER
+  m_text: buy train
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
@@ -1938,6 +1938,10 @@ PrefabInstance:
       propertyPath: vehicle.Array.data[2]
       value: 
       objectReference: {fileID: 2101473909007155763, guid: 24070826844adba4a85b154f6293aea8, type: 3}
+    - target: {fileID: 7686724607489179822, guid: fe33c7ef9d039cf48b81dc056aecc783, type: 3}
+      propertyPath: m_text
+      value: buy runner
+      objectReference: {fileID: 0}
     - target: {fileID: 8555331694872329265, guid: fe33c7ef9d039cf48b81dc056aecc783, type: 3}
       propertyPath: m_Name
       value: RunnersBTN
@@ -2430,6 +2434,10 @@ PrefabInstance:
       propertyPath: vehicle.Array.data[2]
       value: 
       objectReference: {fileID: 2101473909007155763, guid: c25b09657d9cb564eba988d708dbb9ce, type: 3}
+    - target: {fileID: 7686724607489179822, guid: fe33c7ef9d039cf48b81dc056aecc783, type: 3}
+      propertyPath: m_text
+      value: buy boat
+      objectReference: {fileID: 0}
     - target: {fileID: 8555331694872329265, guid: fe33c7ef9d039cf48b81dc056aecc783, type: 3}
       propertyPath: m_Name
       value: WaterBTN
@@ -2998,6 +3006,10 @@ PrefabInstance:
       propertyPath: vehicle.Array.data[2]
       value: 
       objectReference: {fileID: 2101473909007155763, guid: 24070826844adba4a85b154f6293aea8, type: 3}
+    - target: {fileID: 7686724607489179822, guid: fe33c7ef9d039cf48b81dc056aecc783, type: 3}
+      propertyPath: m_text
+      value: Buy taxi
+      objectReference: {fileID: 0}
     - target: {fileID: 8555331694872329265, guid: fe33c7ef9d039cf48b81dc056aecc783, type: 3}
       propertyPath: m_Name
       value: TaxiLimoBTN
@@ -4562,6 +4574,10 @@ PrefabInstance:
       propertyPath: vehicle.Array.data[2]
       value: 
       objectReference: {fileID: 2101473909007155763, guid: 24070826844adba4a85b154f6293aea8, type: 3}
+    - target: {fileID: 7686724607489179822, guid: fe33c7ef9d039cf48b81dc056aecc783, type: 3}
+      propertyPath: m_text
+      value: buy truck
+      objectReference: {fileID: 0}
     - target: {fileID: 8555331694872329265, guid: fe33c7ef9d039cf48b81dc056aecc783, type: 3}
       propertyPath: m_Name
       value: TruckBTN

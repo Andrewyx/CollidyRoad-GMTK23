@@ -1951,6 +1951,10 @@ PrefabInstance:
       propertyPath: vehicle.Array.data[3]
       value: 
       objectReference: {fileID: 2101473909007155763, guid: c9c2ae7121824474cadb35ff702bca06, type: 3}
+    - target: {fileID: 7686724607489179822, guid: fe33c7ef9d039cf48b81dc056aecc783, type: 3}
+      propertyPath: m_text
+      value: BUY WALKERS
+      objectReference: {fileID: 0}
     - target: {fileID: 8555331694872329265, guid: fe33c7ef9d039cf48b81dc056aecc783, type: 3}
       propertyPath: m_Name
       value: RunOverButton
@@ -2144,6 +2148,10 @@ PrefabInstance:
       propertyPath: vehicle.Array.data[3]
       value: 
       objectReference: {fileID: 2101473909007155763, guid: 0f33796e34a004478bbb528253770fa3, type: 3}
+    - target: {fileID: 7686724607489179822, guid: fe33c7ef9d039cf48b81dc056aecc783, type: 3}
+      propertyPath: m_text
+      value: BUY TRUCK
+      objectReference: {fileID: 0}
     - target: {fileID: 8555331694872329265, guid: fe33c7ef9d039cf48b81dc056aecc783, type: 3}
       propertyPath: m_Name
       value: RunOverButton (1)
