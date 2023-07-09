@@ -4269,7 +4269,7 @@ MonoBehaviour:
   numKilled: 0
   killToNextLevel: 2000
   lastPlayedLevel: 0
-  pointsToNextLevel: 2000
+  pointsToNextLevel: 1400
   nextLevel:
     _sceneOB: {fileID: 102900000, guid: 3a6e9ccf447414a4b96c8f61d75768fa, type: 3}
     _name: LVL3
