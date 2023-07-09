@@ -949,7 +949,7 @@ MonoBehaviour:
   - {fileID: 3671549474643671430, guid: a583d5fa2492e4c5ba7c85aa8803f49c, type: 3}
   - {fileID: 3671549474643671430, guid: c36c0719634e91444bac2f83403e610b, type: 3}
   - {fileID: 3671549474643671430, guid: 479321afb7fcf304f9c764ac857bc152, type: 3}
-  totalEnemies: 50
+  totalEnemies: 100
   spawnInterval: 1
   spawnLocation: {fileID: 648089273}
   spawnAreaX: 2
@@ -3411,7 +3411,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   resumeButton: {fileID: 1325203432}
   quitButton: {fileID: 1423144900}
-  pointsToNextLevel: 120
+  pointsToNextLevel: 200
   nextLevel:
     _sceneOB: {fileID: 102900000, guid: 225f8740610354b6b8cd55e67f7f43a8, type: 3}
     _name: PlayScene2

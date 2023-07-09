@@ -3967,8 +3967,8 @@ MonoBehaviour:
   - {fileID: 3671549474643671430, guid: a583d5fa2492e4c5ba7c85aa8803f49c, type: 3}
   - {fileID: 3671549474643671430, guid: c36c0719634e91444bac2f83403e610b, type: 3}
   - {fileID: 3671549474643671430, guid: 479321afb7fcf304f9c764ac857bc152, type: 3}
-  totalEnemies: 800
-  spawnInterval: 0.067
+  totalEnemies: 2200
+  spawnInterval: 0.02
   spawnLocation: {fileID: 1972030581}
   spawnAreaX: 4
   spawnAreaY: 1

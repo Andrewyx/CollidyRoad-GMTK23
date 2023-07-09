@@ -81,8 +81,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 310f40a01a932cb4591723d1a6386082, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vehicleForce: 20
+  vehicleForce: 1
   vehicleHealth: 3
+  brokenBus: {fileID: 0}
 --- !u!61 &1646897408571156222
 BoxCollider2D:
   m_ObjectHideFlags: 0

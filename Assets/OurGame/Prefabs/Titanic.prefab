@@ -48,7 +48,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 10000
+  m_Mass: 1000000
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0
@@ -75,8 +75,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 310f40a01a932cb4591723d1a6386082, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vehicleForce: 50
-  vehicleHealth: 5
+  vehicleForce: 10
+  vehicleHealth: 4000
   brokenBus: {fileID: 3181363670931498174, guid: efec3e5ea7f25494c80d9352606bd427, type: 3}
 --- !u!212 &5196984796758231582
 SpriteRenderer:
