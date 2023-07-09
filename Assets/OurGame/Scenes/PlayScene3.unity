@@ -1163,7 +1163,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 393125574}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -60.370453, y: -92.053375, z: -41.073544}
+  m_LocalPosition: {x: -241, y: -342, z: -41.073544}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1225,7 +1225,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -2408,7 +2408,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7282150997466556592, guid: fe33c7ef9d039cf48b81dc056aecc783, type: 3}
       propertyPath: zrotation
-      value: 90
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7282150997466556592, guid: fe33c7ef9d039cf48b81dc056aecc783, type: 3}
       propertyPath: vehicle.Array.size
@@ -5254,8 +5254,8 @@ MonoBehaviour:
   resumeButton: {fileID: 2134691723}
   quitButton: {fileID: 888219545}
   numKilled: 0
-  killToNextLevel: 0
-  pointsToNextLevel: 50
+  killToNextLevel: 200
+  pointsToNextLevel: 500
   nextLevel:
     _sceneOB: {fileID: 102900000, guid: f7c61ec1bfc534fbe9b8ec58a7982250, type: 3}
     _name: WinScene
@@ -5553,8 +5553,8 @@ MonoBehaviour:
   - {fileID: 3671549474643671430, guid: a583d5fa2492e4c5ba7c85aa8803f49c, type: 3}
   - {fileID: 3671549474643671430, guid: c36c0719634e91444bac2f83403e610b, type: 3}
   - {fileID: 3671549474643671430, guid: 479321afb7fcf304f9c764ac857bc152, type: 3}
-  totalEnemies: 50
-  spawnInterval: 1
+  totalEnemies: 2147483647
+  spawnInterval: 0.1
   spawnLocation: {fileID: 154709351}
   spawnAreaX: 2
   spawnAreaY: 1
