@@ -45,7 +45,7 @@ internal class WaveSpawner : MonoBehaviour
                     position.y - spawnAreaY,
                     position.y + spawnAreaY
                 ),
-                position.y
+                position.z
             );
 
             // pick a random enemy to spawn

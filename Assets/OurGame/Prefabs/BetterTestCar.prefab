@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 78868382571738114}
   - component: {fileID: 8782738971613423140}
   - component: {fileID: 5196984796758231582}
-  - component: {fileID: 2540528621663004445}
+  - component: {fileID: 7230373541456192675}
   m_Layer: 0
   m_Name: BetterTestCar
   m_TagString: Untagged
@@ -75,8 +75,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 310f40a01a932cb4591723d1a6386082, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  VehicleForce: 50
-  VehicleHealth: 3
+  vehicleForce: 50
+  vehicleHealth: 3
+  prefabList: []
 --- !u!212 &5196984796758231582
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -116,7 +117,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 80119781
-  m_SortingLayer: 1
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 069877f9832fecd448e49f0438625442, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -129,8 +130,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!60 &2540528621663004445
-PolygonCollider2D:
+--- !u!61 &7230373541456192675
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -161,7 +162,7 @@ PolygonCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -1.0330806, y: -0.4907136}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -171,73 +172,9 @@ PolygonCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 6.146406, y: -2.030703}
-      - {x: 6.146406, y: 1.1619531}
-      - {x: 6.113828, y: 1.1945312}
-      - {x: 3.6532598, y: 1.1876032}
-      - {x: 3.594453, y: 1.9438281}
-      - {x: 3.246953, y: 1.9438281}
-      - {x: 3.214375, y: 1.91125}
-      - {x: 3.214375, y: 1.1945312}
-      - {x: 3.0080469, y: 1.3682812}
-      - {x: 2.5736718, y: 1.4660156}
-      - {x: 1.9003906, y: 1.4334375}
-      - {x: 1.3791406, y: 1.3791406}
-      - {x: 1.3139844, y: 1.2271093}
-      - {x: 0.2171875, y: 1.2379687}
-      - {x: 0.19546875, y: 1.3357031}
-      - {x: -0.15203124, y: 1.4225781}
-      - {x: -1.248828, y: 1.4008594}
-      - {x: -1.3574219, y: 1.21625}
-      - {x: -2.2696095, y: 1.2379687}
-      - {x: -2.345625, y: 1.3357031}
-      - {x: -2.725703, y: 1.3682812}
-      - {x: -3.7247655, y: 1.3357031}
-      - {x: -3.855078, y: 1.2596875}
-      - {x: -3.8225, y: 1.2053906}
-      - {x: -5.1473436, y: 1.2379687}
-      - {x: -5.223359, y: 1.3574219}
-      - {x: -5.6360154, y: 1.4117187}
-      - {x: -6.6133595, y: 1.3465625}
-      - {x: -6.7002344, y: 1.2705469}
-      - {x: -6.6785154, y: 1.1945312}
-      - {x: -8.079375, y: 1.1945312}
-      - {x: -8.111953, y: 1.1619531}
-      - {x: -8.111953, y: -2.0415626}
-      - {x: -8.090235, y: -2.0632813}
-      - {x: -6.4721875, y: -2.0632813}
-      - {x: -6.493906, y: -2.0632813}
-      - {x: -6.5590625, y: -2.0958593}
-      - {x: -6.461328, y: -2.25875}
-      - {x: -5.1473436, y: -2.2153125}
-      - {x: -5.1147656, y: -2.1067188}
-      - {x: -4.007109, y: -2.085}
-      - {x: -4.0179687, y: -2.1392968}
-      - {x: -3.8659375, y: -2.2153125}
-      - {x: -2.834297, y: -2.2370312}
-      - {x: -2.5410938, y: -2.1501563}
-      - {x: -2.5628126, y: -2.0741405}
-      - {x: -1.6289062, y: -2.1501563}
-      - {x: -1.4008594, y: -2.25875}
-      - {x: -0.40179688, y: -2.204453}
-      - {x: -0.260625, y: -2.1392968}
-      - {x: -0.28234375, y: -2.0741405}
-      - {x: 1.21625, y: -2.0632813}
-      - {x: 1.1945312, y: -2.1067188}
-      - {x: 1.3791406, y: -2.2153125}
-      - {x: 1.9872656, y: -2.226172}
-      - {x: 2.4216406, y: -2.1827343}
-      - {x: 2.5302343, y: -2.117578}
-      - {x: 3.160078, y: -2.0632813}
-      - {x: 3.160078, y: -2.7582812}
-      - {x: 3.1817968, y: -2.78}
-      - {x: 3.5618749, y: -2.78}
-      - {x: 3.5835936, y: -2.7582812}
-      - {x: 3.5835936, y: -2.0632813}
-      - {x: 6.113828, y: -2.0632813}
-  m_UseDelaunayMesh: 0
+  serializedVersion: 2
+  m_Size: {x: 14.285274, y: 3.6115198}
+  m_EdgeRadius: 0
 --- !u!1 &6003729247898265132
 GameObject:
   m_ObjectHideFlags: 0

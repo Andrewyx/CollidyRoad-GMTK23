@@ -44,8 +44,8 @@ GameObject:
   - component: {fileID: 5639386417804425696}
   - component: {fileID: -5653185199647800065}
   - component: {fileID: 3608426655750035630}
-  - component: {fileID: 7393162807712715065}
   - component: {fileID: 1675519549847256187}
+  - component: {fileID: 8505032780241863940}
   m_Layer: 8
   m_Name: Goose
   m_TagString: Animal
@@ -148,7 +148,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f42d1c39f65db534ca9eb0d4f19984f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxEnemyHp: 1
   blood: {fileID: 8761058250669690772, guid: c5432a79e191c47758cf9a8ea433f225, type: 3}
   deathSoundClone: {fileID: 8165764704013130534, guid: 0033672d5ab0f524e974e8a5535bdd67, type: 3}
 --- !u!50 &3608426655750035630
@@ -178,8 +177,29 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
---- !u!60 &7393162807712715065
-PolygonCollider2D:
+--- !u!95 &1675519549847256187
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3671549474643671430}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: fd8f83be61e06ae489c909ff10583bdc, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!61 &8505032780241863940
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -210,7 +230,7 @@ PolygonCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.3459227, y: -0.68317795}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -220,83 +240,6 @@ PolygonCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 2.1067188, y: -2.7908595}
-      - {x: 2.1067188, y: -1.9872656}
-      - {x: 2.1501563, y: -1.9546875}
-      - {x: 2.7148438, y: -1.9438281}
-      - {x: 2.78, y: -1.91125}
-      - {x: 2.6822655, y: -1.2596875}
-      - {x: 2.7582812, y: -0.260625}
-      - {x: 2.921172, y: 0.36921874}
-      - {x: 3.018906, y: 0.695}
-      - {x: 3.0297656, y: 0.77101564}
-      - {x: 3.0297656, y: 0.84703124}
-      - {x: 2.9754686, y: 0.87960935}
-      - {x: 2.2696095, y: 0.8904687}
-      - {x: 2.1610155, y: 0.9121875}
-      - {x: 2.1827343, y: 1.7157812}
-      - {x: 2.171875, y: 2.2153125}
-      - {x: 2.1501563, y: 2.2696095}
-      - {x: 1.7700781, y: 2.3021874}
-      - {x: 1.0750781, y: 2.2913282}
-      - {x: 0.80359375, y: 2.313047}
-      - {x: 0.80359375, y: 2.8885937}
-      - {x: 0.7601562, y: 2.9428906}
-      - {x: 0.1303125, y: 2.9428906}
-      - {x: 0.07601562, y: 2.8994532}
-      - {x: 0.06515625, y: 2.3782032}
-      - {x: 0.010859375, y: 2.313047}
-      - {x: -1.129375, y: 2.313047}
-      - {x: -1.1728125, y: 2.2478907}
-      - {x: -1.1836718, y: 1.0425}
-      - {x: -1.4551562, y: 1.0316406}
-      - {x: -2.0741405, y: 1.0533594}
-      - {x: -2.1284375, y: 0.9447656}
-      - {x: -2.117578, y: 0.33664063}
-      - {x: -2.1284375, y: -0.46695313}
-      - {x: -2.1392968, y: -0.955625}
-      - {x: -2.1392968, y: -1.8460938}
-      - {x: -2.0524218, y: -1.9329687}
-      - {x: -1.248828, y: -1.9438281}
-      - {x: -1.2379687, y: -2.8451562}
-      - {x: -0.8144531, y: -2.8885937}
-      - {x: -0.3800781, y: -2.866875}
-      - {x: -0.3909375, y: -3.3664062}
-      - {x: -0.32578126, y: -3.4098437}
-      - {x: 1.0207813, y: -3.4207032}
-      - {x: 1.476875, y: -3.4207032}
-      - {x: 1.4985937, y: -3.388125}
-      - {x: 1.509453, y: -2.921172}
-      - {x: 2.085, y: -2.866875}
-    - - {x: -8.893828, y: 2.7908595}
-      - {x: -8.926406, y: 2.7582812}
-      - {x: -8.926406, y: 2.7474217}
-      - {x: -8.893828, y: 2.7148438}
-      - {x: -8.882969, y: 2.7148438}
-      - {x: -8.85039, y: 2.7474217}
-      - {x: -8.85039, y: 2.7582812}
-      - {x: -8.882969, y: 2.7908595}
-  m_UseDelaunayMesh: 0
---- !u!95 &1675519549847256187
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3671549474643671430}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: fd8f83be61e06ae489c909ff10583bdc, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
+  serializedVersion: 2
+  m_Size: {x: 4.8438687, y: 5.423815}
+  m_EdgeRadius: 0
