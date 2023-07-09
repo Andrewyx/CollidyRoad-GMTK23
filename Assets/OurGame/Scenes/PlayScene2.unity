@@ -4256,6 +4256,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   resumeButton: {fileID: 190448953}
   quitButton: {fileID: 377628583}
+  numKilled: 0
+  killToNextLevel: 2000
   pointsToNextLevel: 5000
   nextLevel:
     _sceneOB: {fileID: 102900000, guid: f4a53ab200da242528b607ca5d7a2178, type: 3}

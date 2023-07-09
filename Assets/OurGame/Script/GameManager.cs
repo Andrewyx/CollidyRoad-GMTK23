@@ -20,6 +20,10 @@ public class GameManager : MonoBehaviour
     // single responsibility principle be damned
     public Button resumeButton;
     public Button quitButton;
+
+    public int numKilled = 0;
+    
+    public int killToNextLevel;
     
     public int pointsToNextLevel = 50; // should never be more than number of enemies spawned in the game,
                                        // or else the game will never end
@@ -54,6 +58,11 @@ public class GameManager : MonoBehaviour
                 UpdateGameState(GameState.Playing);
             else
                 UpdateGameState(GameState.Paused);
+        }
+
+        if (numKilled >= killToNextLevel)
+        {
+            UpdateGameState(GameState.Win);
         }
     }
 

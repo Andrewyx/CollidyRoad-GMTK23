@@ -25,6 +25,7 @@ public class EnemyAnimal : MonoBehaviour
             Instantiate(deathSoundClone, transform.position, Quaternion.identity);
             PlayerData.instance.IncreasePoints(_maxEnemyHp);
             CinemachineShake.Instance.ShakeCameraSharp(2f, 0.1f);
+            GameManager.instance.numKilled++;
             Destroy(gameObject);
             Instantiate(blood, transform.position, Quaternion.identity);
         }
