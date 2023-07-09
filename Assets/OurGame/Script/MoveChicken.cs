@@ -1,5 +1,5 @@
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class MoveChicken : MonoBehaviour
 {
     public float speed;
@@ -34,12 +34,26 @@ public class MoveChicken : MonoBehaviour
         //     );
 
 
-        if (transform.position.y >= 4)
+        if (transform.position.y >= 4 && SceneManager.GetActiveScene().name == "PlayScene1")
         {
             PlayerData.instance.DecreaseLives(1);
             Destroy(
                 gameObject
             );
         }
+        else if (transform.position.y >= 9 && SceneManager.GetActiveScene().name == "PlayScene2")
+        {
+            PlayerData.instance.DecreaseLives(1);
+            Destroy(
+                gameObject
+            );
+        }      
+        else if (transform.position.y >= 9 && SceneManager.GetActiveScene().name == "PlayScene3")
+        {
+            PlayerData.instance.DecreaseLives(1);
+            Destroy(
+                gameObject
+            );
+        }                
     }
 }
