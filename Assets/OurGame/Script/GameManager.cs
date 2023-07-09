@@ -21,10 +21,11 @@ public class GameManager : MonoBehaviour
     public Button resumeButton;
     public Button quitButton;
 
-    public int numKilled;
-
+    public int numKilled = 0;
+    
     public int killToNextLevel;
-
+    [SerializeField] private int lastPlayedLevel= 0;
+    
     public int pointsToNextLevel = 50; // should never be more than number of enemies spawned in the game,
                                        // or else the game will never end
                                        
@@ -85,6 +86,7 @@ public class GameManager : MonoBehaviour
             case GameState.Win:
                 Debug.Log($"Loading next scene named: {nextLevel.Name}");
                 SceneManager.LoadScene(nextLevel.Name);
+                lastPlayedLevel += 1;
                 break;
             default:
                 throw new ArgumentOutOfRangeException(nameof(gs), gs, null);
@@ -93,7 +95,15 @@ public class GameManager : MonoBehaviour
 
     private void HandleGameOver()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+
+        SceneManager.LoadScene("LossScene");
+        PlayerData.instance.Reset();
+    }
+    public void RestartLevel(){
+        SceneManager.LoadScene(lastPlayedLevel);
+    }
+    public void ReloopRun(){
+        lastPlayedLevel = 0;
         PlayerData.instance.Reset();
     }
 
