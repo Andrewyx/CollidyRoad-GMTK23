@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5196984796758231582}
   - component: {fileID: 1646897408571156222}
   m_Layer: 0
-  m_Name: MotorBoat
+  m_Name: Titanic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 2101473909007155763}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.15, y: 0.15, z: 0.15}
+  m_LocalScale: {x: 0.21, y: 0.21, z: 0.21}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 9152388781260911305}
@@ -118,7 +118,7 @@ SpriteRenderer:
   m_SortingLayerID: 80119781
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 88c3919d6c89fc445afd917758c0d9fb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 496db208e096bea4983316ca5e879be6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -161,18 +161,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.02786398, y: -0.8714566}
+  m_Offset: {x: -0.27063942, y: 0.72073555}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 22.24, y: 16.68}
+    oldSize: {x: 16.68, y: 22.24}
     newSize: {x: 2.45, y: 5.46}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.6749754, y: 11.434033}
+  m_Size: {x: 4.160526, y: 20.018044}
   m_EdgeRadius: 0
 --- !u!1 &6003729247898265132
 GameObject:
