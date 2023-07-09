@@ -4263,10 +4263,10 @@ MonoBehaviour:
   lastPlayedLevel: 0
   pointsToNextLevel: 2000
   nextLevel:
-    _sceneOB: {fileID: 102900000, guid: f4a53ab200da242528b607ca5d7a2178, type: 3}
-    _name: PlayScene3
-    _path: Assets/OurGame/Scenes/PlayScene3.unity
-    _buildIndex: 4
+    _sceneOB: {fileID: 102900000, guid: 3a6e9ccf447414a4b96c8f61d75768fa, type: 3}
+    _name: LVL3
+    _path: Assets/OurGame/Scenes/LVL3.unity
+    _buildIndex: 6
 --- !u!1 &1935027732
 GameObject:
   m_ObjectHideFlags: 0
