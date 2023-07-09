@@ -15,8 +15,6 @@ public class DialogueButton : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        if (_index >= 10)
-            _index = 0;
     
         if (_index == 0) background[0].gameObject.SetActive(true);
     }
@@ -33,4 +31,7 @@ public class DialogueButton : MonoBehaviour
         Debug.Log(_index);
         _index += 1;
     }
+
+    //private boolean set to true
+    // once goes through entire list, set to false 
 }
