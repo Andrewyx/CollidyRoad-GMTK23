@@ -76,6 +76,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   vehicleForce: 10
   vehicleHealth: 1
+  brokenBus: {fileID: 3181363670931498174, guid: d5e91fd18ebdf490da561cc9d78b964a, type: 3}
 --- !u!212 &5196984796758231582
 SpriteRenderer:
   m_ObjectHideFlags: 0
