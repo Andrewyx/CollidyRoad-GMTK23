@@ -29,4 +29,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/OurGame/Scenes/CreditScene.unity
     guid: 98149da97b2440d4a91739e4da3bb77b
+  - enabled: 1
+    path: Assets/OurGame/Scenes/LVL1.unity
+    guid: 75276dbbf9a03d642923a15c4b9c0c13
+  - enabled: 1
+    path: Assets/OurGame/Scenes/LVL2.unity
+    guid: 47fb31f311597e64a83dbd88d7922f5d
+  - enabled: 1
+    path: Assets/OurGame/Scenes/LVL3.unity
+    guid: ee9a5045cc71b1741b62521b58065de5
   m_configObjects: {}
